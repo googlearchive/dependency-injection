@@ -1,0 +1,29 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "car.dart",
+        "5": false
+      }
+    ],
+    "6": "car_no_di.dart",
+    "10": [
+      {
+        "1": "car.template.dart",
+        "4": "i0"
+      }
+    ]
+  },
+  "type": {
+    "Car": {
+      "class": "Identifier",
+      "name": "Car",
+      "moduleUrl": "asset:dependency_injection/lib/car/car_no_di.dart",
+      "prefix": null,
+      "constConstructor": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

@@ -1,0 +1,1828 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "app_config.dart",
+        "5": false
+      },
+      {
+        "1": "heroes/hero_service_provider.dart",
+        "5": false
+      },
+      {
+        "1": "heroes/hero_service.dart",
+        "5": false
+      },
+      {
+        "1": "logger_service.dart",
+        "5": false
+      },
+      {
+        "1": "user_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "ProviderComponent1",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-1'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [Logger]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "4": "logger"
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent2",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-2'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [const Provider(Logger, useClass: Logger)]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "4": "logger"
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent3",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-3'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [const Provider(Logger, useClass: Logger)]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "4": "logger"
+          }
+        ]
+      },
+      {
+        "1": "BetterLogger",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent4",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-4'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [const Provider(Logger, useClass: BetterLogger)]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "4": "logger"
+          }
+        ]
+      },
+      {
+        "1": "EvenBetterLogger",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "UserService",
+            "4": "_userService"
+          }
+        ],
+        "6": [
+          "Logger"
+        ],
+        "7": [
+          {
+            "1": "logs",
+            "2": [
+              {
+                "1": "override",
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "8": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent5",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-5'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [UserService, const Provider(Logger, useClass: EvenBetterLogger)]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "4": "logger"
+          }
+        ]
+      },
+      {
+        "1": "NewLogger",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ],
+        "6": [
+          "OldLogger"
+        ]
+      },
+      {
+        "1": "ProviderComponent6a",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-6a'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [NewLogger, const Provider(OldLogger, useClass: NewLogger)]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "NewLogger",
+            "4": "newLogger"
+          },
+          {
+            "1": "OldLogger",
+            "4": "oldLogger"
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent6b",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-6b'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [NewLogger, const Provider(OldLogger, useExisting: NewLogger)]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "NewLogger",
+            "4": "newLogger"
+          },
+          {
+            "1": "OldLogger",
+            "4": "oldLogger"
+          }
+        ]
+      },
+      {
+        "1": "ConfigurableLogger",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "String",
+            "3": [
+              "const Inject(loggerPrefix)"
+            ],
+            "4": "_prefix"
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent7",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-7'"
+              },
+              {
+                "1": "template",
+                "2": "'{{message}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [const Provider(Logger, useClass: ConfigurableLogger), const Provider(loggerPrefix, useValue: 'Testing')]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "4": "logger"
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent8",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-8'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [const Provider(HeroService, useFactory: heroServiceFactory), Logger, UserService]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "HeroService",
+            "4": "heroService"
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent9",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-9'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [const Provider(AppConfig, useValue: config1)]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "AppConfig",
+            "4": "_config"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ]
+      },
+      {
+        "1": "ProviderComponent10a",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-10a'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              },
+              {
+                "1": "providers",
+                "2": "const [Logger]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "4": "logger"
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent10b",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-10b'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "3": [
+              "const Optional()"
+            ],
+            "4": "_logger"
+          }
+        ]
+      },
+      {
+        "1": "ProviderComponent10c",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'provider-10c'"
+              },
+              {
+                "1": "template",
+                "2": "'{{log}}'"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Logger",
+            "3": [
+              "const Optional()"
+            ],
+            "4": "logger"
+          }
+        ]
+      },
+      {
+        "1": "DoNothingLogger",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ],
+        "7": [
+          {
+            "1": "logs",
+            "2": [
+              {
+                "1": "override",
+                "4": false,
+                "5": false,
+                "6": false,
+                "7": false,
+                "8": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "1": "ProvidersComponent",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'my-providers'"
+              },
+              {
+                "1": "template",
+                "2": "'''\n      <h2>Provider variations</h2>\n      <div id=\"p1\"><provider-1></provider-1></div>\n      <div id=\"p2\"><provider-2></provider-2></div>\n      <div id=\"p3\"><provider-3></provider-3></div>\n      <div id=\"p4\"><provider-4></provider-4></div>\n      <div id=\"p5\"><provider-5></provider-5></div>\n      <div id=\"p6a\"><provider-6a></provider-6a></div>\n      <div id=\"p6b\"><provider-6b></provider-6b></div>\n      <div id=\"p7\"><provider-7></provider-7></div>\n      <div id=\"p8\"><provider-8></provider-8></div>\n      <div id=\"p8\"><provider-9></provider-9></div>\n      <div id=\"p10a\"><provider-10a></provider-10a></div>\n      <div id=\"p10b\"><provider-10b></provider-10b></div>\n      <div id=\"p10c\"><provider-10c></provider-10c></div>'''"
+              },
+              {
+                "1": "directives",
+                "2": "const [ProviderComponent1, ProviderComponent2, ProviderComponent3, ProviderComponent4, ProviderComponent5, ProviderComponent6a, ProviderComponent6b, ProviderComponent7, ProviderComponent8, ProviderComponent9, ProviderComponent10a, ProviderComponent10b, ProviderComponent10c]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "8": [
+          {
+            "2": "ProviderComponent1"
+          },
+          {
+            "2": "ProviderComponent2"
+          },
+          {
+            "2": "ProviderComponent3"
+          },
+          {
+            "2": "ProviderComponent4"
+          },
+          {
+            "2": "ProviderComponent5"
+          },
+          {
+            "2": "ProviderComponent6a"
+          },
+          {
+            "2": "ProviderComponent6b"
+          },
+          {
+            "2": "ProviderComponent7"
+          },
+          {
+            "2": "ProviderComponent8"
+          },
+          {
+            "2": "ProviderComponent9"
+          },
+          {
+            "2": "ProviderComponent10a"
+          },
+          {
+            "2": "ProviderComponent10b"
+          },
+          {
+            "2": "ProviderComponent10c"
+          }
+        ]
+      }
+    ],
+    "6": "providers_component.dart"
+  },
+  "type": {
+    "loggerPrefix": {
+      "class": "Identifier",
+      "name": "loggerPrefix",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "constConstructor": null,
+      "value": null
+    },
+    "ProviderComponent1": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-1",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent1",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "Logger",
+          "moduleUrl": null,
+          "prefix": null,
+          "constConstructor": null,
+          "value": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ProviderComponent2": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-2",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent2",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "Logger",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "Logger",
+            "moduleUrl": null,
+            "prefix": null,
+            "isHost": false,
+            "constConstructor": null,
+            "value": null,
+            "diDeps": null
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ProviderComponent3": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-3",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent3",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "Logger",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "Logger",
+            "moduleUrl": null,
+            "prefix": null,
+            "isHost": false,
+            "constConstructor": null,
+            "value": null,
+            "diDeps": null
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "BetterLogger": {
+      "class": "Type",
+      "name": "BetterLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": []
+    },
+    "ProviderComponent4": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-4",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent4",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "Logger",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "BetterLogger",
+            "moduleUrl": null,
+            "prefix": null,
+            "isHost": false,
+            "constConstructor": null,
+            "value": null,
+            "diDeps": null
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "EvenBetterLogger": {
+      "class": "Type",
+      "name": "EvenBetterLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": [
+        {
+          "token": {
+            "class": "Identifier",
+            "name": "UserService",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "query": null,
+          "viewQuery": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false
+        }
+      ]
+    },
+    "ProviderComponent5": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-5",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent5",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "UserService",
+          "moduleUrl": null,
+          "prefix": null,
+          "constConstructor": null,
+          "value": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "Logger",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "EvenBetterLogger",
+            "moduleUrl": null,
+            "prefix": null,
+            "isHost": false,
+            "constConstructor": null,
+            "value": null,
+            "diDeps": null
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "NewLogger": {
+      "class": "Type",
+      "name": "NewLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": []
+    },
+    "OldLogger": {
+      "class": "Identifier",
+      "name": "OldLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "constConstructor": null,
+      "value": null
+    },
+    "ProviderComponent6a": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-6a",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent6a",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "NewLogger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          },
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "OldLogger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "NewLogger",
+          "moduleUrl": null,
+          "prefix": null,
+          "constConstructor": null,
+          "value": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "OldLogger",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "NewLogger",
+            "moduleUrl": null,
+            "prefix": null,
+            "isHost": false,
+            "constConstructor": null,
+            "value": null,
+            "diDeps": null
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ProviderComponent6b": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-6b",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent6b",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "NewLogger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          },
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "OldLogger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "NewLogger",
+          "moduleUrl": null,
+          "prefix": null,
+          "constConstructor": null,
+          "value": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "OldLogger",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": null,
+          "useExisting": {
+            "class": "Identifier",
+            "name": "NewLogger",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useValue": null,
+          "useFactory": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ConfigurableLogger": {
+      "class": "Type",
+      "name": "ConfigurableLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": [
+        {
+          "token": {
+            "class": "Identifier",
+            "name": "loggerPrefix",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "query": null,
+          "viewQuery": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false
+        }
+      ]
+    },
+    "ProviderComponent7": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-7",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent7",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{message}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "Logger",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "ConfigurableLogger",
+            "moduleUrl": null,
+            "prefix": null,
+            "isHost": false,
+            "constConstructor": null,
+            "value": null,
+            "diDeps": null
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "loggerPrefix",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": "Testing",
+          "useFactory": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ProviderComponent8": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-8",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent8",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "HeroService",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "HeroService",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": {
+            "class": "Factory",
+            "name": "heroServiceFactory",
+            "prefix": null,
+            "moduleUrl": null,
+            "constConstructor": null,
+            "value": null,
+            "diDeps": null
+          }
+        },
+        {
+          "class": "Identifier",
+          "name": "Logger",
+          "moduleUrl": null,
+          "prefix": null,
+          "constConstructor": null,
+          "value": null
+        },
+        {
+          "class": "Identifier",
+          "name": "UserService",
+          "moduleUrl": null,
+          "prefix": null,
+          "constConstructor": null,
+          "value": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ProviderComponent9": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-9",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent9",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "AppConfig",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "class": "Identifier",
+            "name": "AppConfig",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": {
+            "class": "Identifier",
+            "name": "config1",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "useFactory": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ProviderComponent10a": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-10a",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent10a",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "Logger",
+          "moduleUrl": null,
+          "prefix": null,
+          "constConstructor": null,
+          "value": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ProviderComponent10b": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-10b",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent10b",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": true
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ProviderComponent10c": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "provider-10c",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProviderComponent10c",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "constConstructor": null,
+              "value": null
+            },
+            "query": null,
+            "viewQuery": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": true
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "DoNothingLogger": {
+      "class": "Type",
+      "name": "DoNothingLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": []
+    },
+    "ProvidersComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "my-providers",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ProvidersComponent",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "      <h2>Provider variations</h2>\n      <div id=\"p1\"><provider-1></provider-1></div>\n      <div id=\"p2\"><provider-2></provider-2></div>\n      <div id=\"p3\"><provider-3></provider-3></div>\n      <div id=\"p4\"><provider-4></provider-4></div>\n      <div id=\"p5\"><provider-5></provider-5></div>\n      <div id=\"p6a\"><provider-6a></provider-6a></div>\n      <div id=\"p6b\"><provider-6b></provider-6b></div>\n      <div id=\"p7\"><provider-7></provider-7></div>\n      <div id=\"p8\"><provider-8></provider-8></div>\n      <div id=\"p8\"><provider-9></provider-9></div>\n      <div id=\"p10a\"><provider-10a></provider-10a></div>\n      <div id=\"p10b\"><provider-10b></provider-10b></div>\n      <div id=\"p10c\"><provider-10c></provider-10c></div>",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

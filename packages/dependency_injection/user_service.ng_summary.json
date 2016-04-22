@@ -1,0 +1,48 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "UserService",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ]
+      }
+    ],
+    "6": "user_service.dart"
+  },
+  "type": {
+    "UserService": {
+      "class": "Type",
+      "name": "UserService",
+      "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": []
+    },
+    "User": {
+      "class": "Identifier",
+      "name": "User",
+      "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
+      "prefix": null,
+      "constConstructor": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

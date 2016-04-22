@@ -1,0 +1,91 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "AppConfig",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "4": "apiEndpoint"
+          },
+          {
+            "1": "String",
+            "4": "title"
+          }
+        ]
+      }
+    ],
+    "6": "app_config.dart",
+    "10": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      }
+    ]
+  },
+  "type": {
+    "config1": {
+      "class": "Identifier",
+      "name": "config1",
+      "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
+      "prefix": null,
+      "constConstructor": null,
+      "value": null
+    },
+    "AppConfig": {
+      "class": "Type",
+      "name": "AppConfig",
+      "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": [
+        {
+          "token": null,
+          "query": null,
+          "viewQuery": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false
+        },
+        {
+          "token": {
+            "class": "Identifier",
+            "name": "String",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "query": null,
+          "viewQuery": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

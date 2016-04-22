@@ -1,0 +1,131 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "Engine",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ]
+      },
+      {
+        "1": "Tires",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ]
+      },
+      {
+        "1": "Car",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": true,
+            "8": false
+          }
+        ],
+        "5": [
+          {
+            "1": "Engine",
+            "4": "engine"
+          },
+          {
+            "1": "Tires",
+            "4": "tires"
+          }
+        ]
+      }
+    ],
+    "6": "car.dart"
+  },
+  "type": {
+    "Engine": {
+      "class": "Type",
+      "name": "Engine",
+      "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": []
+    },
+    "Tires": {
+      "class": "Type",
+      "name": "Tires",
+      "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": []
+    },
+    "Car": {
+      "class": "Type",
+      "name": "Car",
+      "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+      "prefix": null,
+      "isHost": false,
+      "constConstructor": null,
+      "value": null,
+      "diDeps": [
+        {
+          "token": {
+            "class": "Identifier",
+            "name": "Engine",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "query": null,
+          "viewQuery": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false
+        },
+        {
+          "token": {
+            "class": "Identifier",
+            "name": "Tires",
+            "moduleUrl": null,
+            "prefix": null,
+            "constConstructor": null,
+            "value": null
+          },
+          "query": null,
+          "viewQuery": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

@@ -23,7 +23,6 @@
       "name": "useInjector",
       "moduleUrl": "asset:dependency_injection/lib/car/car_injector.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

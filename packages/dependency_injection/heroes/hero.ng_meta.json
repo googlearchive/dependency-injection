@@ -6,7 +6,6 @@
       "name": "Hero",
       "moduleUrl": "asset:dependency_injection/lib/heroes/hero.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

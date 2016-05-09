@@ -18,35 +18,7 @@
     "5": [
       {
         "1": "HeroesComponent",
-        "4": [
-          {
-            "1": "Component",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'my-heroes'"
-              },
-              {
-                "1": "template",
-                "2": "'''\n      <h2>Heroes</h2>\n      <hero-list></hero-list>'''"
-              },
-              {
-                "1": "providers",
-                "2": "const [heroServiceProvider]"
-              },
-              {
-                "1": "directives",
-                "2": "const [HeroListComponent]"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": true,
-            "7": true,
-            "8": false
-          }
-        ],
-        "8": [
+        "7": [
           {
             "2": "HeroListComponent"
           }
@@ -54,17 +26,17 @@
       }
     ],
     "6": "heroes_component.dart",
-    "10": [
+    "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/core.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "hero_list_component.template.dart",
+        "1": "hero_list_component.ngfactory.dart",
         "4": "i1"
       },
       {
-        "1": "hero_service_provider.template.dart",
+        "1": "hero_service_provider.ngfactory.dart",
         "4": "i2"
       }
     ]
@@ -73,7 +45,6 @@
     "HeroesComponent": {
       "class": "Directive",
       "isComponent": true,
-      "dynamicLoadable": true,
       "selector": "my-heroes",
       "exportAs": null,
       "type": {
@@ -82,7 +53,6 @@
         "moduleUrl": "asset:dependency_injection/lib/heroes/heroes_component.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": []
       },
@@ -105,49 +75,62 @@
         {
           "class": "Provider",
           "token": {
-            "class": "Type",
-            "name": "HeroService",
-            "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service.dart",
-            "prefix": null,
-            "isHost": false,
-            "constConstructor": null,
             "value": null,
-            "diDeps": [
-              {
-                "token": {
-                  "class": "Identifier",
-                  "name": "Logger",
-                  "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
+            "identifier": {
+              "class": "Type",
+              "name": "HeroService",
+              "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "Logger",
+                      "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "query": null,
+                  "viewQuery": null,
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
                 },
-                "query": null,
-                "viewQuery": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false
-              },
-              {
-                "token": {
-                  "class": "Identifier",
-                  "name": "bool",
-                  "moduleUrl": null,
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
-                },
-                "query": null,
-                "viewQuery": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false
-              }
-            ]
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "bool",
+                      "moduleUrl": null,
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "query": null,
+                  "viewQuery": null,
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
           },
           "useClass": null,
           "useExisting": null,
@@ -157,45 +140,101 @@
             "name": "heroServiceFactory",
             "prefix": null,
             "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_provider.dart",
-            "constConstructor": null,
             "value": null,
             "diDeps": [
               {
                 "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "Logger",
+                    "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "query": null,
+                "viewQuery": null,
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              },
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "UserService",
+                    "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "query": null,
+                "viewQuery": null,
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              }
+            ]
+          },
+          "multi": false,
+          "deps": [
+            {
+              "token": {
+                "value": null,
+                "identifier": {
                   "class": "Identifier",
                   "name": "Logger",
                   "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
                   "prefix": null,
-                  "constConstructor": null,
                   "value": null
                 },
-                "query": null,
-                "viewQuery": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false
+                "identifierIsInstance": false
               },
-              {
-                "token": {
+              "query": null,
+              "viewQuery": null,
+              "value": null,
+              "isAttribute": false,
+              "isSelf": false,
+              "isHost": false,
+              "isSkipSelf": false,
+              "isOptional": false,
+              "isValue": false
+            },
+            {
+              "token": {
+                "value": null,
+                "identifier": {
                   "class": "Identifier",
                   "name": "UserService",
                   "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
                   "prefix": null,
-                  "constConstructor": null,
                   "value": null
                 },
-                "query": null,
-                "viewQuery": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false
-              }
-            ]
-          }
+                "identifierIsInstance": false
+              },
+              "query": null,
+              "viewQuery": null,
+              "value": null,
+              "isAttribute": false,
+              "isSelf": false,
+              "isHost": false,
+              "isSkipSelf": false,
+              "isOptional": false,
+              "isValue": false
+            }
+          ]
         }
       ],
       "viewProviders": [],

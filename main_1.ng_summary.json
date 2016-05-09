@@ -23,7 +23,6 @@
       "name": "main",
       "moduleUrl": "asset:dependency_injection/web/main_1.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

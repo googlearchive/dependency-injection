@@ -8,9 +8,9 @@
       }
     ],
     "6": "car_creations.dart",
-    "10": [
+    "7": [
       {
-        "1": "car.template.dart",
+        "1": "car.ngfactory.dart",
         "4": "i0"
       }
     ]
@@ -21,7 +21,6 @@
       "name": "simpleCar",
       "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     },
     "Engine2": {
@@ -29,7 +28,6 @@
       "name": "Engine2",
       "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     },
     "superCar": {
@@ -37,7 +35,6 @@
       "name": "superCar",
       "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     },
     "MockEngine": {
@@ -45,7 +42,6 @@
       "name": "MockEngine",
       "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     },
     "MockTires": {
@@ -53,7 +49,6 @@
       "name": "MockTires",
       "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     },
     "testCar": {
@@ -61,7 +56,6 @@
       "name": "testCar",
       "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

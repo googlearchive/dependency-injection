@@ -18,26 +18,6 @@
     "5": [
       {
         "1": "HeroListComponent",
-        "4": [
-          {
-            "1": "Component",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'hero-list'"
-              },
-              {
-                "1": "template",
-                "2": "'''\n      <div *ngFor=\"#hero of heroes\">\n        {{hero.id}} - {{hero.name}}\n        ({{hero.isSecret ? 'secret' : 'public'}})\n      </div>'''"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": true,
-            "7": true,
-            "8": false
-          }
-        ],
         "5": [
           {
             "1": "HeroService",
@@ -47,17 +27,17 @@
       }
     ],
     "6": "hero_list_component.dart",
-    "10": [
+    "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/core.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "hero.template.dart",
+        "1": "hero.ngfactory.dart",
         "4": "i1"
       },
       {
-        "1": "hero_service.template.dart",
+        "1": "hero_service.ngfactory.dart",
         "4": "i2"
       }
     ]
@@ -66,7 +46,6 @@
     "HeroListComponent": {
       "class": "Directive",
       "isComponent": true,
-      "dynamicLoadable": true,
       "selector": "hero-list",
       "exportAs": null,
       "type": {
@@ -75,25 +54,29 @@
         "moduleUrl": "asset:dependency_injection/lib/heroes/hero_list_component.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": [
           {
             "token": {
-              "class": "Identifier",
-              "name": "HeroService",
-              "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service.dart",
-              "prefix": null,
-              "constConstructor": null,
-              "value": null
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "HeroService",
+                "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
             },
             "query": null,
             "viewQuery": null,
+            "value": null,
             "isAttribute": false,
             "isSelf": false,
             "isHost": false,
             "isSkipSelf": false,
-            "isOptional": false
+            "isOptional": false,
+            "isValue": false
           }
         ]
       },
@@ -106,7 +89,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <div *ngFor=\"#hero of heroes\">\n        {{hero.id}} - {{hero.name}}\n        ({{hero.isSecret ? 'secret' : 'public'}})\n      </div>",
+        "template": "      <div *ngFor=\"let hero of heroes\">\n        {{hero.id}} - {{hero.name}}\n        ({{hero.isSecret ? 'secret' : 'public'}})\n      </div>",
         "templateUrl": "asset:dependency_injection/lib/heroes/hero_list_component.dart",
         "styles": [],
         "styleUrls": [],

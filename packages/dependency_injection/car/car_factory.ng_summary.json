@@ -15,7 +15,6 @@
       "name": "CarFactory",
       "moduleUrl": "asset:dependency_injection/lib/car/car_factory.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

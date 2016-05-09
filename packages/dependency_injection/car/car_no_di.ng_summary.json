@@ -15,7 +15,6 @@
       "name": "Car",
       "moduleUrl": "asset:dependency_injection/lib/car/car_no_di.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

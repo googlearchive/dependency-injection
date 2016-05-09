@@ -12,13 +12,13 @@
       }
     ],
     "6": "hero_service_1.dart",
-    "10": [
+    "7": [
       {
-        "1": "hero.template.dart",
+        "1": "hero.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "mock_heroes.template.dart",
+        "1": "mock_heroes.ngfactory.dart",
         "4": "i1"
       }
     ]
@@ -29,7 +29,6 @@
       "name": "HeroService",
       "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_1.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

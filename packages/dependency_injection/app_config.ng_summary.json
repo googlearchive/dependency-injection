@@ -13,11 +13,7 @@
         "4": [
           {
             "1": "Injectable",
-            "4": false,
-            "5": false,
-            "6": false,
-            "7": true,
-            "8": false
+            "4": false
           }
         ],
         "5": [
@@ -39,7 +35,6 @@
       "name": "config1",
       "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     },
     "AppConfig": {
@@ -48,35 +43,41 @@
       "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
       "prefix": null,
       "isHost": false,
-      "constConstructor": null,
       "value": null,
       "diDeps": [
         {
           "token": null,
           "query": null,
           "viewQuery": null,
+          "value": null,
           "isAttribute": false,
           "isSelf": false,
           "isHost": false,
           "isSkipSelf": false,
-          "isOptional": false
+          "isOptional": false,
+          "isValue": false
         },
         {
           "token": {
-            "class": "Identifier",
-            "name": "String",
-            "moduleUrl": null,
-            "prefix": null,
-            "constConstructor": null,
-            "value": null
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "String",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
           },
           "query": null,
           "viewQuery": null,
+          "value": null,
           "isAttribute": false,
           "isSelf": false,
           "isHost": false,
           "isSkipSelf": false,
-          "isOptional": false
+          "isOptional": false,
+          "isValue": false
         }
       ]
     }

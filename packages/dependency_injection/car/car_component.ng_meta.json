@@ -32,30 +32,6 @@
     "5": [
       {
         "1": "CarComponent",
-        "4": [
-          {
-            "1": "Component",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'my-car'"
-              },
-              {
-                "1": "template",
-                "2": "'''\n      <h2>Cars</h2>\n      <div id=\"di\">{{car.drive()}}</div>\n      <div id=\"nodi\">{{noDiCar.drive()}}</div>\n      <div id=\"injector\">{{injectorCar.drive()}}</div>\n      <div id=\"factory\">{{factoryCar.drive()}}</div>\n      <div id=\"simple\">{{simpleCar.drive()}}</div>\n      <div id=\"super\">{{superCar.drive()}}</div>\n      <div id=\"test\">{{testCar.drive()}}</div>'''"
-              },
-              {
-                "1": "providers",
-                "2": "const [Car, Engine, Tires]"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": true,
-            "7": true,
-            "8": false
-          }
-        ],
         "5": [
           {
             "1": "Car",
@@ -65,29 +41,29 @@
       }
     ],
     "6": "car_component.dart",
-    "10": [
+    "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/core.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "car.template.dart",
+        "1": "car.ngfactory.dart",
         "4": "i1"
       },
       {
-        "1": "car_creations.template.dart",
+        "1": "car_creations.ngfactory.dart",
         "4": "i2"
       },
       {
-        "1": "car_factory.template.dart",
+        "1": "car_factory.ngfactory.dart",
         "4": "i3"
       },
       {
-        "1": "car_injector.template.dart",
+        "1": "car_injector.ngfactory.dart",
         "4": "i4"
       },
       {
-        "1": "car_no_di.template.dart",
+        "1": "car_no_di.ngfactory.dart",
         "4": "i5"
       }
     ]
@@ -96,7 +72,6 @@
     "CarComponent": {
       "class": "Directive",
       "isComponent": true,
-      "dynamicLoadable": true,
       "selector": "my-car",
       "exportAs": null,
       "type": {
@@ -105,25 +80,29 @@
         "moduleUrl": "asset:dependency_injection/lib/car/car_component.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": [
           {
             "token": {
-              "class": "Identifier",
-              "name": "Car",
-              "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-              "prefix": null,
-              "constConstructor": null,
-              "value": null
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "Car",
+                "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
             },
             "query": null,
             "viewQuery": null,
+            "value": null,
             "isAttribute": false,
             "isSelf": false,
             "isHost": false,
             "isSkipSelf": false,
-            "isOptional": false
+            "isOptional": false,
+            "isValue": false
           }
         ]
       },
@@ -146,49 +125,62 @@
         {
           "class": "Provider",
           "token": {
-            "class": "Type",
-            "name": "Car",
-            "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-            "prefix": null,
-            "isHost": false,
-            "constConstructor": null,
             "value": null,
-            "diDeps": [
-              {
-                "token": {
-                  "class": "Identifier",
-                  "name": "Engine",
-                  "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
+            "identifier": {
+              "class": "Type",
+              "name": "Car",
+              "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "Engine",
+                      "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "query": null,
+                  "viewQuery": null,
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
                 },
-                "query": null,
-                "viewQuery": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false
-              },
-              {
-                "token": {
-                  "class": "Identifier",
-                  "name": "Tires",
-                  "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
-                },
-                "query": null,
-                "viewQuery": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false
-              }
-            ]
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "Tires",
+                      "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "query": null,
+                  "viewQuery": null,
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
           },
           "useClass": {
             "class": "Type",
@@ -196,60 +188,74 @@
             "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
             "prefix": null,
             "isHost": false,
-            "constConstructor": null,
             "value": null,
             "diDeps": [
               {
                 "token": {
-                  "class": "Identifier",
-                  "name": "Engine",
-                  "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "Engine",
+                    "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
                 },
                 "query": null,
                 "viewQuery": null,
+                "value": null,
                 "isAttribute": false,
                 "isSelf": false,
                 "isHost": false,
                 "isSkipSelf": false,
-                "isOptional": false
+                "isOptional": false,
+                "isValue": false
               },
               {
                 "token": {
-                  "class": "Identifier",
-                  "name": "Tires",
-                  "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-                  "prefix": null,
-                  "constConstructor": null,
-                  "value": null
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "Tires",
+                    "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
                 },
                 "query": null,
                 "viewQuery": null,
+                "value": null,
                 "isAttribute": false,
                 "isSelf": false,
                 "isHost": false,
                 "isSkipSelf": false,
-                "isOptional": false
+                "isOptional": false,
+                "isValue": false
               }
             ]
           },
           "useExisting": null,
           "useValue": null,
-          "useFactory": null
+          "useFactory": null,
+          "multi": false,
+          "deps": null
         },
         {
           "class": "Provider",
           "token": {
-            "class": "Type",
-            "name": "Engine",
-            "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-            "prefix": null,
-            "isHost": false,
-            "constConstructor": null,
             "value": null,
-            "diDeps": []
+            "identifier": {
+              "class": "Type",
+              "name": "Engine",
+              "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
           },
           "useClass": {
             "class": "Type",
@@ -257,25 +263,29 @@
             "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
             "prefix": null,
             "isHost": false,
-            "constConstructor": null,
             "value": null,
             "diDeps": []
           },
           "useExisting": null,
           "useValue": null,
-          "useFactory": null
+          "useFactory": null,
+          "multi": false,
+          "deps": null
         },
         {
           "class": "Provider",
           "token": {
-            "class": "Type",
-            "name": "Tires",
-            "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-            "prefix": null,
-            "isHost": false,
-            "constConstructor": null,
             "value": null,
-            "diDeps": []
+            "identifier": {
+              "class": "Type",
+              "name": "Tires",
+              "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
           },
           "useClass": {
             "class": "Type",
@@ -283,13 +293,14 @@
             "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
             "prefix": null,
             "isHost": false,
-            "constConstructor": null,
             "value": null,
             "diDeps": []
           },
           "useExisting": null,
           "useValue": null,
-          "useFactory": null
+          "useFactory": null,
+          "multi": false,
+          "deps": null
         }
       ],
       "viewProviders": [],

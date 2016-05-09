@@ -19,7 +19,6 @@
       "name": "HeroService",
       "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_1.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

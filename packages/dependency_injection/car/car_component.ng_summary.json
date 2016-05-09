@@ -32,30 +32,6 @@
     "5": [
       {
         "1": "CarComponent",
-        "4": [
-          {
-            "1": "Component",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'my-car'"
-              },
-              {
-                "1": "template",
-                "2": "'''\n      <h2>Cars</h2>\n      <div id=\"di\">{{car.drive()}}</div>\n      <div id=\"nodi\">{{noDiCar.drive()}}</div>\n      <div id=\"injector\">{{injectorCar.drive()}}</div>\n      <div id=\"factory\">{{factoryCar.drive()}}</div>\n      <div id=\"simple\">{{simpleCar.drive()}}</div>\n      <div id=\"super\">{{superCar.drive()}}</div>\n      <div id=\"test\">{{testCar.drive()}}</div>'''"
-              },
-              {
-                "1": "providers",
-                "2": "const [Car, Engine, Tires]"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": true,
-            "7": true,
-            "8": false
-          }
-        ],
         "5": [
           {
             "1": "Car",
@@ -70,7 +46,6 @@
     "CarComponent": {
       "class": "Directive",
       "isComponent": true,
-      "dynamicLoadable": true,
       "selector": "my-car",
       "exportAs": null,
       "type": {
@@ -79,25 +54,29 @@
         "moduleUrl": "asset:dependency_injection/lib/car/car_component.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": [
           {
             "token": {
-              "class": "Identifier",
-              "name": "Car",
-              "moduleUrl": null,
-              "prefix": null,
-              "constConstructor": null,
-              "value": null
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "Car",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
             },
             "query": null,
             "viewQuery": null,
+            "value": null,
             "isAttribute": false,
             "isSelf": false,
             "isHost": false,
             "isSkipSelf": false,
-            "isOptional": false
+            "isOptional": false,
+            "isValue": false
           }
         ]
       },
@@ -122,7 +101,6 @@
           "name": "Car",
           "moduleUrl": null,
           "prefix": null,
-          "constConstructor": null,
           "value": null
         },
         {
@@ -130,7 +108,6 @@
           "name": "Engine",
           "moduleUrl": null,
           "prefix": null,
-          "constConstructor": null,
           "value": null
         },
         {
@@ -138,7 +115,6 @@
           "name": "Tires",
           "moduleUrl": null,
           "prefix": null,
-          "constConstructor": null,
           "value": null
         }
       ],

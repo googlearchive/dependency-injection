@@ -8,9 +8,9 @@
       }
     ],
     "6": "car_no_di.dart",
-    "10": [
+    "7": [
       {
-        "1": "car.template.dart",
+        "1": "car.ngfactory.dart",
         "4": "i0"
       }
     ]
@@ -21,7 +21,6 @@
       "name": "Car",
       "moduleUrl": "asset:dependency_injection/lib/car/car_no_di.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },

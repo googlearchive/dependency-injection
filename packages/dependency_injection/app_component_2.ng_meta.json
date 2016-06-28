@@ -28,7 +28,10 @@
         "1": "AppComponent",
         "5": [
           {
-            "1": "AppConfig",
+            "1": "Map",
+            "3": [
+              "const Inject(APP_CONFIG)"
+            ],
             "4": "config"
           }
         ],
@@ -85,7 +88,7 @@
               "value": null,
               "identifier": {
                 "class": "Identifier",
-                "name": "AppConfig",
+                "name": "APP_CONFIG",
                 "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
                 "prefix": null,
                 "value": null
@@ -155,48 +158,11 @@
           "token": {
             "value": null,
             "identifier": {
-              "class": "Type",
-              "name": "AppConfig",
+              "class": "Identifier",
+              "name": "APP_CONFIG",
               "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
               "prefix": null,
-              "isHost": false,
-              "value": null,
-              "diDeps": [
-                {
-                  "token": null,
-                  "query": null,
-                  "viewQuery": null,
-                  "value": null,
-                  "isAttribute": false,
-                  "isSelf": false,
-                  "isHost": false,
-                  "isSkipSelf": false,
-                  "isOptional": false,
-                  "isValue": false
-                },
-                {
-                  "token": {
-                    "value": null,
-                    "identifier": {
-                      "class": "Identifier",
-                      "name": "String",
-                      "moduleUrl": null,
-                      "prefix": null,
-                      "value": null
-                    },
-                    "identifierIsInstance": false
-                  },
-                  "query": null,
-                  "viewQuery": null,
-                  "value": null,
-                  "isAttribute": false,
-                  "isSelf": false,
-                  "isHost": false,
-                  "isSkipSelf": false,
-                  "isOptional": false,
-                  "isValue": false
-                }
-              ]
+              "value": null
             },
             "identifierIsInstance": false
           },
@@ -204,7 +170,7 @@
           "useExisting": null,
           "useValue": {
             "class": "Identifier",
-            "name": "config1",
+            "name": "heroDiConfig",
             "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
             "prefix": null,
             "value": null

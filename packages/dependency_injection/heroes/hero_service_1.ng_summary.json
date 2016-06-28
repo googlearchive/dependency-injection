@@ -3,6 +3,10 @@
     "1": "",
     "3": [
       {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
         "1": "hero.dart",
         "5": false
       },
@@ -11,15 +15,28 @@
         "5": false
       }
     ],
+    "5": [
+      {
+        "1": "HeroService",
+        "4": [
+          {
+            "1": "Injectable",
+            "4": false
+          }
+        ]
+      }
+    ],
     "6": "hero_service_1.dart"
   },
   "type": {
     "HeroService": {
-      "class": "Identifier",
+      "class": "Type",
       "name": "HeroService",
       "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_1.dart",
       "prefix": null,
-      "value": null
+      "isHost": false,
+      "value": null,
+      "diDeps": []
     }
   },
   "alias": {}

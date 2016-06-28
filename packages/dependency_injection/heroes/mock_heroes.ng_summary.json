@@ -9,6 +9,14 @@
     ],
     "6": "mock_heroes.dart"
   },
-  "type": {},
+  "type": {
+    "_initHero": {
+      "class": "Identifier",
+      "name": "_initHero",
+      "moduleUrl": "asset:dependency_injection/lib/heroes/mock_heroes.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
   "alias": {}
 }

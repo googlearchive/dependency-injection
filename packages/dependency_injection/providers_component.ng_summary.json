@@ -29,7 +29,7 @@
     ],
     "5": [
       {
-        "1": "ProviderComponent1",
+        "1": "Provider1Component",
         "5": [
           {
             "1": "Logger",
@@ -38,16 +38,7 @@
         ]
       },
       {
-        "1": "ProviderComponent2",
-        "5": [
-          {
-            "1": "Logger",
-            "4": "logger"
-          }
-        ]
-      },
-      {
-        "1": "ProviderComponent3",
+        "1": "Provider3Component",
         "5": [
           {
             "1": "Logger",
@@ -65,7 +56,7 @@
         ]
       },
       {
-        "1": "ProviderComponent4",
+        "1": "Provider4Component",
         "5": [
           {
             "1": "Logger",
@@ -86,13 +77,10 @@
             "1": "UserService",
             "4": "_userService"
           }
-        ],
-        "6": [
-          "Logger"
         ]
       },
       {
-        "1": "ProviderComponent5",
+        "1": "Provider5Component",
         "5": [
           {
             "1": "Logger",
@@ -113,7 +101,7 @@
         ]
       },
       {
-        "1": "ProviderComponent6a",
+        "1": "Provider6aComponent",
         "5": [
           {
             "1": "NewLogger",
@@ -126,7 +114,7 @@
         ]
       },
       {
-        "1": "ProviderComponent6b",
+        "1": "Provider6bComponent",
         "5": [
           {
             "1": "NewLogger",
@@ -139,25 +127,7 @@
         ]
       },
       {
-        "1": "ConfigurableLogger",
-        "4": [
-          {
-            "1": "Injectable",
-            "4": false
-          }
-        ],
-        "5": [
-          {
-            "1": "String",
-            "3": [
-              "const Inject(loggerPrefix)"
-            ],
-            "4": "_prefix"
-          }
-        ]
-      },
-      {
-        "1": "ProviderComponent7",
+        "1": "Provider7Component",
         "5": [
           {
             "1": "Logger",
@@ -166,7 +136,7 @@
         ]
       },
       {
-        "1": "ProviderComponent8",
+        "1": "Provider8Component",
         "5": [
           {
             "1": "HeroService",
@@ -175,10 +145,13 @@
         ]
       },
       {
-        "1": "ProviderComponent9",
+        "1": "Provider9Component",
         "5": [
           {
-            "1": "AppConfig",
+            "1": "Map",
+            "3": [
+              "const Inject(APP_CONFIG)"
+            ],
             "4": "_config"
           }
         ],
@@ -187,16 +160,7 @@
         ]
       },
       {
-        "1": "ProviderComponent10a",
-        "5": [
-          {
-            "1": "Logger",
-            "4": "logger"
-          }
-        ]
-      },
-      {
-        "1": "ProviderComponent10b",
+        "1": "Provider10Component",
         "5": [
           {
             "1": "Logger",
@@ -205,70 +169,43 @@
             ],
             "4": "_logger"
           }
-        ]
-      },
-      {
-        "1": "ProviderComponent10c",
-        "5": [
-          {
-            "1": "Logger",
-            "3": [
-              "const Optional()"
-            ],
-            "4": "logger"
-          }
-        ]
-      },
-      {
-        "1": "DoNothingLogger",
-        "4": [
-          {
-            "1": "Injectable",
-            "4": false
-          }
+        ],
+        "6": [
+          "OnInit"
         ]
       },
       {
         "1": "ProvidersComponent",
         "7": [
           {
-            "2": "ProviderComponent1"
+            "2": "Provider1Component"
           },
           {
-            "2": "ProviderComponent2"
+            "2": "Provider3Component"
           },
           {
-            "2": "ProviderComponent3"
+            "2": "Provider4Component"
           },
           {
-            "2": "ProviderComponent4"
+            "2": "Provider5Component"
           },
           {
-            "2": "ProviderComponent5"
+            "2": "Provider6aComponent"
           },
           {
-            "2": "ProviderComponent6a"
+            "2": "Provider6bComponent"
           },
           {
-            "2": "ProviderComponent6b"
+            "2": "Provider7Component"
           },
           {
-            "2": "ProviderComponent7"
+            "2": "Provider8Component"
           },
           {
-            "2": "ProviderComponent8"
+            "2": "Provider9Component"
           },
           {
-            "2": "ProviderComponent9"
-          },
-          {
-            "2": "ProviderComponent10a"
-          },
-          {
-            "2": "ProviderComponent10b"
-          },
-          {
-            "2": "ProviderComponent10c"
+            "2": "Provider10Component"
           }
         ]
       }
@@ -276,21 +213,28 @@
     "6": "providers_component.dart"
   },
   "type": {
-    "loggerPrefix": {
+    "template": {
       "class": "Identifier",
-      "name": "loggerPrefix",
+      "name": "template",
       "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
       "prefix": null,
       "value": null
     },
-    "ProviderComponent1": {
+    "silentLogger": {
+      "class": "Identifier",
+      "name": "silentLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Provider1Component": {
       "class": "Directive",
       "isComponent": true,
       "selector": "provider-1",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent1",
+        "name": "Provider1Component",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -348,100 +292,14 @@
       "queries": [],
       "viewQueries": []
     },
-    "ProviderComponent2": {
-      "class": "Directive",
-      "isComponent": true,
-      "selector": "provider-2",
-      "exportAs": null,
-      "type": {
-        "class": "Type",
-        "name": "ProviderComponent2",
-        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-        "prefix": null,
-        "isHost": false,
-        "value": null,
-        "diDeps": [
-          {
-            "token": {
-              "value": null,
-              "identifier": {
-                "class": "Identifier",
-                "name": "Logger",
-                "moduleUrl": null,
-                "prefix": null,
-                "value": null
-              },
-              "identifierIsInstance": false
-            },
-            "query": null,
-            "viewQuery": null,
-            "value": null,
-            "isAttribute": false,
-            "isSelf": false,
-            "isHost": false,
-            "isSkipSelf": false,
-            "isOptional": false,
-            "isValue": false
-          }
-        ]
-      },
-      "changeDetection": 5,
-      "inputs": {},
-      "outputs": {},
-      "hostListeners": {},
-      "hostProperties": {},
-      "hostAttributes": {},
-      "lifecycleHooks": [],
-      "template": {
-        "encapsulation": 2,
-        "template": "{{log}}",
-        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
-        "styles": [],
-        "styleUrls": [],
-        "ngContentSelectors": []
-      },
-      "providers": [
-        {
-          "class": "Provider",
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "Logger",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "useClass": {
-            "class": "Type",
-            "name": "Logger",
-            "moduleUrl": null,
-            "prefix": null,
-            "isHost": false,
-            "value": null,
-            "diDeps": []
-          },
-          "useExisting": null,
-          "useValue": null,
-          "useFactory": null,
-          "multi": false,
-          "deps": null
-        }
-      ],
-      "viewProviders": [],
-      "queries": [],
-      "viewQueries": []
-    },
-    "ProviderComponent3": {
+    "Provider3Component": {
       "class": "Directive",
       "isComponent": true,
       "selector": "provider-3",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent3",
+        "name": "Provider3Component",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -529,14 +387,14 @@
       "value": null,
       "diDeps": []
     },
-    "ProviderComponent4": {
+    "Provider4Component": {
       "class": "Directive",
       "isComponent": true,
       "selector": "provider-4",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent4",
+        "name": "Provider4Component",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -647,14 +505,14 @@
         }
       ]
     },
-    "ProviderComponent5": {
+    "Provider5Component": {
       "class": "Directive",
       "isComponent": true,
       "selector": "provider-5",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent5",
+        "name": "Provider5Component",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -756,14 +614,14 @@
       "prefix": null,
       "value": null
     },
-    "ProviderComponent6a": {
+    "Provider6aComponent": {
       "class": "Directive",
       "isComponent": true,
       "selector": "provider-6a",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent6a",
+        "name": "Provider6aComponent",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -871,14 +729,14 @@
       "queries": [],
       "viewQueries": []
     },
-    "ProviderComponent6b": {
+    "Provider6bComponent": {
       "class": "Directive",
       "isComponent": true,
       "selector": "provider-6b",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent6b",
+        "name": "Provider6bComponent",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -988,46 +846,21 @@
       "queries": [],
       "viewQueries": []
     },
-    "ConfigurableLogger": {
-      "class": "Type",
-      "name": "ConfigurableLogger",
+    "SilentLogger": {
+      "class": "Identifier",
+      "name": "SilentLogger",
       "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
       "prefix": null,
-      "isHost": false,
-      "value": null,
-      "diDeps": [
-        {
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "loggerPrefix",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "query": null,
-          "viewQuery": null,
-          "value": null,
-          "isAttribute": false,
-          "isSelf": false,
-          "isHost": false,
-          "isSkipSelf": false,
-          "isOptional": false,
-          "isValue": false
-        }
-      ]
+      "value": null
     },
-    "ProviderComponent7": {
+    "Provider7Component": {
       "class": "Directive",
       "isComponent": true,
       "selector": "provider-7",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent7",
+        "name": "Provider7Component",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -1066,7 +899,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "{{message}}",
+        "template": "{{log}}",
         "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
         "styles": [],
         "styleUrls": [],
@@ -1086,37 +919,15 @@
             },
             "identifierIsInstance": false
           },
-          "useClass": {
-            "class": "Type",
-            "name": "ConfigurableLogger",
-            "moduleUrl": null,
-            "prefix": null,
-            "isHost": false,
-            "value": null,
-            "diDeps": []
-          },
-          "useExisting": null,
-          "useValue": null,
-          "useFactory": null,
-          "multi": false,
-          "deps": null
-        },
-        {
-          "class": "Provider",
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "loggerPrefix",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
           "useClass": null,
           "useExisting": null,
-          "useValue": "Testing",
+          "useValue": {
+            "class": "Identifier",
+            "name": "silentLogger",
+            "moduleUrl": null,
+            "prefix": null,
+            "value": null
+          },
           "useFactory": null,
           "multi": false,
           "deps": null
@@ -1126,14 +937,14 @@
       "queries": [],
       "viewQueries": []
     },
-    "ProviderComponent8": {
+    "Provider8Component": {
       "class": "Directive",
       "isComponent": true,
       "selector": "provider-8",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent8",
+        "name": "Provider8Component",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -1180,31 +991,11 @@
       },
       "providers": [
         {
-          "class": "Provider",
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "HeroService",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "useClass": null,
-          "useExisting": null,
-          "useValue": null,
-          "useFactory": {
-            "class": "Factory",
-            "name": "heroServiceFactory",
-            "prefix": null,
-            "moduleUrl": null,
-            "value": null,
-            "diDeps": []
-          },
-          "multi": false,
-          "deps": null
+          "class": "Identifier",
+          "name": "heroServiceProvider",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
         },
         {
           "class": "Identifier",
@@ -1225,14 +1016,14 @@
       "queries": [],
       "viewQueries": []
     },
-    "ProviderComponent9": {
+    "Provider9Component": {
       "class": "Directive",
       "isComponent": true,
       "selector": "provider-9",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent9",
+        "name": "Provider9Component",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -1243,7 +1034,7 @@
               "value": null,
               "identifier": {
                 "class": "Identifier",
-                "name": "AppConfig",
+                "name": "APP_CONFIG",
                 "moduleUrl": null,
                 "prefix": null,
                 "value": null
@@ -1286,7 +1077,7 @@
             "value": null,
             "identifier": {
               "class": "Identifier",
-              "name": "AppConfig",
+              "name": "APP_CONFIG",
               "moduleUrl": null,
               "prefix": null,
               "value": null
@@ -1297,7 +1088,7 @@
           "useExisting": null,
           "useValue": {
             "class": "Identifier",
-            "name": "config1",
+            "name": "heroDiConfig",
             "moduleUrl": null,
             "prefix": null,
             "value": null
@@ -1311,14 +1102,14 @@
       "queries": [],
       "viewQueries": []
     },
-    "ProviderComponent10a": {
+    "Provider10Component": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "provider-10a",
+      "selector": "provider-10",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ProviderComponent10a",
+        "name": "Provider10Component",
         "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
         "prefix": null,
         "isHost": false,
@@ -1343,7 +1134,7 @@
             "isSelf": false,
             "isHost": false,
             "isSkipSelf": false,
-            "isOptional": false,
+            "isOptional": true,
             "isValue": false
           }
         ]
@@ -1354,72 +1145,9 @@
       "hostListeners": {},
       "hostProperties": {},
       "hostAttributes": {},
-      "lifecycleHooks": [],
-      "template": {
-        "encapsulation": 2,
-        "template": "{{log}}",
-        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
-        "styles": [],
-        "styleUrls": [],
-        "ngContentSelectors": []
-      },
-      "providers": [
-        {
-          "class": "Identifier",
-          "name": "Logger",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
-        }
+      "lifecycleHooks": [
+        0
       ],
-      "viewProviders": [],
-      "queries": [],
-      "viewQueries": []
-    },
-    "ProviderComponent10b": {
-      "class": "Directive",
-      "isComponent": true,
-      "selector": "provider-10b",
-      "exportAs": null,
-      "type": {
-        "class": "Type",
-        "name": "ProviderComponent10b",
-        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-        "prefix": null,
-        "isHost": false,
-        "value": null,
-        "diDeps": [
-          {
-            "token": {
-              "value": null,
-              "identifier": {
-                "class": "Identifier",
-                "name": "Logger",
-                "moduleUrl": null,
-                "prefix": null,
-                "value": null
-              },
-              "identifierIsInstance": false
-            },
-            "query": null,
-            "viewQuery": null,
-            "value": null,
-            "isAttribute": false,
-            "isSelf": false,
-            "isHost": false,
-            "isSkipSelf": false,
-            "isOptional": true,
-            "isValue": false
-          }
-        ]
-      },
-      "changeDetection": 5,
-      "inputs": {},
-      "outputs": {},
-      "hostListeners": {},
-      "hostProperties": {},
-      "hostAttributes": {},
-      "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
         "template": "{{log}}",
@@ -1432,72 +1160,6 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
-    },
-    "ProviderComponent10c": {
-      "class": "Directive",
-      "isComponent": true,
-      "selector": "provider-10c",
-      "exportAs": null,
-      "type": {
-        "class": "Type",
-        "name": "ProviderComponent10c",
-        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-        "prefix": null,
-        "isHost": false,
-        "value": null,
-        "diDeps": [
-          {
-            "token": {
-              "value": null,
-              "identifier": {
-                "class": "Identifier",
-                "name": "Logger",
-                "moduleUrl": null,
-                "prefix": null,
-                "value": null
-              },
-              "identifierIsInstance": false
-            },
-            "query": null,
-            "viewQuery": null,
-            "value": null,
-            "isAttribute": false,
-            "isSelf": false,
-            "isHost": false,
-            "isSkipSelf": false,
-            "isOptional": true,
-            "isValue": false
-          }
-        ]
-      },
-      "changeDetection": 5,
-      "inputs": {},
-      "outputs": {},
-      "hostListeners": {},
-      "hostProperties": {},
-      "hostAttributes": {},
-      "lifecycleHooks": [],
-      "template": {
-        "encapsulation": 2,
-        "template": "{{log}}",
-        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
-        "styles": [],
-        "styleUrls": [],
-        "ngContentSelectors": []
-      },
-      "providers": [],
-      "viewProviders": [],
-      "queries": [],
-      "viewQueries": []
-    },
-    "DoNothingLogger": {
-      "class": "Type",
-      "name": "DoNothingLogger",
-      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-      "prefix": null,
-      "isHost": false,
-      "value": null,
-      "diDeps": []
     },
     "ProvidersComponent": {
       "class": "Directive",
@@ -1522,7 +1184,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <h2>Provider variations</h2>\n      <div id=\"p1\"><provider-1></provider-1></div>\n      <div id=\"p2\"><provider-2></provider-2></div>\n      <div id=\"p3\"><provider-3></provider-3></div>\n      <div id=\"p4\"><provider-4></provider-4></div>\n      <div id=\"p5\"><provider-5></provider-5></div>\n      <div id=\"p6a\"><provider-6a></provider-6a></div>\n      <div id=\"p6b\"><provider-6b></provider-6b></div>\n      <div id=\"p7\"><provider-7></provider-7></div>\n      <div id=\"p8\"><provider-8></provider-8></div>\n      <div id=\"p8\"><provider-9></provider-9></div>\n      <div id=\"p10a\"><provider-10a></provider-10a></div>\n      <div id=\"p10b\"><provider-10b></provider-10b></div>\n      <div id=\"p10c\"><provider-10c></provider-10c></div>",
+        "template": "      <h2>Provider variations</h2>\n      <div id=\"p1\"><provider-1></provider-1></div>\n      <div id=\"p3\"><provider-3></provider-3></div>\n      <div id=\"p4\"><provider-4></provider-4></div>\n      <div id=\"p5\"><provider-5></provider-5></div>\n      <div id=\"p6a\"><provider-6a></provider-6a></div>\n      <div id=\"p6b\"><provider-6b></provider-6b></div>\n      <div id=\"p7\"><provider-7></provider-7></div>\n      <div id=\"p8\"><provider-8></provider-8></div>\n      <div id=\"p9\"><provider-9></provider-9></div>\n      <div id=\"p10\"><provider-10></provider-10></div>",
         "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
         "styles": [],
         "styleUrls": [],

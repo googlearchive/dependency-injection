@@ -11,7 +11,7 @@
         "5": false
       },
       {
-        "1": "hero_service.dart",
+        "1": "hero_service_1.dart",
         "5": false
       }
     ],
@@ -37,7 +37,7 @@
         "4": "i1"
       },
       {
-        "1": "hero_service.ngfactory.dart",
+        "1": "hero_service_1.ngfactory.dart",
         "4": "i2"
       }
     ]
@@ -62,7 +62,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "HeroService",
-                "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service.dart",
+                "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_1.dart",
                 "prefix": null,
                 "value": null
               },

@@ -7,11 +7,11 @@
         "5": false
       },
       {
-        "1": "package:dependency_injection/app_component.dart",
+        "1": "package:dependency_injection/app_component_1.dart",
         "5": false
       },
       {
-        "1": "package:dependency_injection/heroes/hero_service.dart",
+        "1": "package:dependency_injection/heroes/hero_service_1.dart",
         "5": false
       }
     ],
@@ -22,11 +22,11 @@
         "4": "i0"
       },
       {
-        "1": "package:dependency_injection/app_component.ngfactory.dart",
+        "1": "package:dependency_injection/app_component_1.ngfactory.dart",
         "4": "i1"
       },
       {
-        "1": "package:dependency_injection/heroes/hero_service.ngfactory.dart",
+        "1": "package:dependency_injection/heroes/hero_service_1.ngfactory.dart",
         "4": "i2"
       }
     ]
@@ -35,6 +35,13 @@
     "main": {
       "class": "Identifier",
       "name": "main",
+      "moduleUrl": "asset:dependency_injection/web/main_1.dart",
+      "prefix": null,
+      "value": null
+    },
+    "main_alt": {
+      "class": "Identifier",
+      "name": "main_alt",
       "moduleUrl": "asset:dependency_injection/web/main_1.dart",
       "prefix": null,
       "value": null

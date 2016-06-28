@@ -7,79 +7,69 @@
         "5": false
       }
     ],
-    "5": [
-      {
-        "1": "AppConfig",
-        "4": [
-          {
-            "1": "Injectable",
-            "4": false
-          }
-        ],
-        "5": [
-          {
-            "4": "apiEndpoint"
-          },
-          {
-            "1": "String",
-            "4": "title"
-          }
-        ]
-      }
-    ],
     "6": "app_config.dart"
   },
   "type": {
-    "config1": {
+    "APP_CONFIG": {
       "class": "Identifier",
-      "name": "config1",
+      "name": "APP_CONFIG",
       "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
       "prefix": null,
       "value": null
     },
+    "heroDiConfig": {
+      "class": "Identifier",
+      "name": "heroDiConfig",
+      "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
+      "prefix": null,
+      "value": null
+    },
+    "appConfigProvider": {
+      "class": "Identifier",
+      "name": "appConfigProvider",
+      "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
+      "prefix": null,
+      "value": {
+        "class": "Provider",
+        "token": {
+          "value": null,
+          "identifier": {
+            "class": "Identifier",
+            "name": "APP_CONFIG",
+            "moduleUrl": null,
+            "prefix": null,
+            "value": null
+          },
+          "identifierIsInstance": false
+        },
+        "useClass": null,
+        "useExisting": null,
+        "useValue": null,
+        "useFactory": {
+          "class": "Factory",
+          "name": "heroDiConfigFactory",
+          "prefix": null,
+          "moduleUrl": null,
+          "value": null,
+          "diDeps": []
+        },
+        "multi": false,
+        "deps": []
+      }
+    },
     "AppConfig": {
-      "class": "Type",
+      "class": "Identifier",
       "name": "AppConfig",
       "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
       "prefix": null,
-      "isHost": false,
-      "value": null,
-      "diDeps": [
-        {
-          "token": null,
-          "query": null,
-          "viewQuery": null,
-          "value": null,
-          "isAttribute": false,
-          "isSelf": false,
-          "isHost": false,
-          "isSkipSelf": false,
-          "isOptional": false,
-          "isValue": false
-        },
-        {
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "String",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "query": null,
-          "viewQuery": null,
-          "value": null,
-          "isAttribute": false,
-          "isSelf": false,
-          "isHost": false,
-          "isSkipSelf": false,
-          "isOptional": false,
-          "isValue": false
-        }
-      ]
+      "value": null
+    },
+    "heroDiConfigFactory": {
+      "class": "Identifier",
+      "name": "heroDiConfigFactory",
+      "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}

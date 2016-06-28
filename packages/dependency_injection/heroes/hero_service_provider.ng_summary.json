@@ -19,28 +19,6 @@
         "5": false
       }
     ],
-    "5": [
-      {
-        "1": "heroServiceFactory",
-        "3": true,
-        "4": [
-          {
-            "1": "Injectable",
-            "4": false
-          }
-        ],
-        "5": [
-          {
-            "1": "Logger",
-            "4": "logger"
-          },
-          {
-            "1": "UserService",
-            "4": "userService"
-          }
-        ]
-      }
-    ],
     "6": "hero_service_provider.dart"
   },
   "type": {
@@ -123,57 +101,11 @@
       }
     },
     "heroServiceFactory": {
-      "class": "Factory",
+      "class": "Identifier",
       "name": "heroServiceFactory",
-      "prefix": null,
       "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_provider.dart",
-      "value": null,
-      "diDeps": [
-        {
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "Logger",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "query": null,
-          "viewQuery": null,
-          "value": null,
-          "isAttribute": false,
-          "isSelf": false,
-          "isHost": false,
-          "isSkipSelf": false,
-          "isOptional": false,
-          "isValue": false
-        },
-        {
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "UserService",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "query": null,
-          "viewQuery": null,
-          "value": null,
-          "isAttribute": false,
-          "isSelf": false,
-          "isHost": false,
-          "isSkipSelf": false,
-          "isOptional": false,
-          "isValue": false
-        }
-      ]
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}

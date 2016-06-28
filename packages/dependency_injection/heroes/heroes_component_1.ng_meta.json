@@ -7,11 +7,11 @@
         "5": false
       },
       {
-        "1": "hero_list_component.dart",
+        "1": "hero_list_component_2.dart",
         "5": false
       },
       {
-        "1": "hero_service.dart",
+        "1": "hero_service_1.dart",
         "5": false
       }
     ],
@@ -32,11 +32,11 @@
         "4": "i0"
       },
       {
-        "1": "hero_list_component.ngfactory.dart",
+        "1": "hero_list_component_2.ngfactory.dart",
         "4": "i1"
       },
       {
-        "1": "hero_service.ngfactory.dart",
+        "1": "hero_service_1.ngfactory.dart",
         "4": "i2"
       }
     ]
@@ -79,112 +79,22 @@
             "identifier": {
               "class": "Type",
               "name": "HeroService",
-              "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service.dart",
+              "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_1.dart",
               "prefix": null,
               "isHost": false,
               "value": null,
-              "diDeps": [
-                {
-                  "token": {
-                    "value": null,
-                    "identifier": {
-                      "class": "Identifier",
-                      "name": "Logger",
-                      "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
-                      "prefix": null,
-                      "value": null
-                    },
-                    "identifierIsInstance": false
-                  },
-                  "query": null,
-                  "viewQuery": null,
-                  "value": null,
-                  "isAttribute": false,
-                  "isSelf": false,
-                  "isHost": false,
-                  "isSkipSelf": false,
-                  "isOptional": false,
-                  "isValue": false
-                },
-                {
-                  "token": {
-                    "value": null,
-                    "identifier": {
-                      "class": "Identifier",
-                      "name": "bool",
-                      "moduleUrl": null,
-                      "prefix": null,
-                      "value": null
-                    },
-                    "identifierIsInstance": false
-                  },
-                  "query": null,
-                  "viewQuery": null,
-                  "value": null,
-                  "isAttribute": false,
-                  "isSelf": false,
-                  "isHost": false,
-                  "isSkipSelf": false,
-                  "isOptional": false,
-                  "isValue": false
-                }
-              ]
+              "diDeps": []
             },
             "identifierIsInstance": false
           },
           "useClass": {
             "class": "Type",
             "name": "HeroService",
-            "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service.dart",
+            "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_1.dart",
             "prefix": null,
             "isHost": false,
             "value": null,
-            "diDeps": [
-              {
-                "token": {
-                  "value": null,
-                  "identifier": {
-                    "class": "Identifier",
-                    "name": "Logger",
-                    "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
-                    "prefix": null,
-                    "value": null
-                  },
-                  "identifierIsInstance": false
-                },
-                "query": null,
-                "viewQuery": null,
-                "value": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false,
-                "isValue": false
-              },
-              {
-                "token": {
-                  "value": null,
-                  "identifier": {
-                    "class": "Identifier",
-                    "name": "bool",
-                    "moduleUrl": null,
-                    "prefix": null,
-                    "value": null
-                  },
-                  "identifierIsInstance": false
-                },
-                "query": null,
-                "viewQuery": null,
-                "value": null,
-                "isAttribute": false,
-                "isSelf": false,
-                "isHost": false,
-                "isSkipSelf": false,
-                "isOptional": false,
-                "isValue": false
-              }
-            ]
+            "diDeps": []
           },
           "useExisting": null,
           "useValue": null,

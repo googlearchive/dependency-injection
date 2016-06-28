@@ -116,31 +116,11 @@
           "value": null
         },
         {
-          "class": "Provider",
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "HeroService",
-              "moduleUrl": null,
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "useClass": null,
-          "useExisting": null,
-          "useValue": null,
-          "useFactory": {
-            "class": "Factory",
-            "name": "heroServiceFactory",
-            "prefix": null,
-            "moduleUrl": null,
-            "value": null,
-            "diDeps": []
-          },
-          "multi": false,
-          "deps": null
+          "class": "Identifier",
+          "name": "heroServiceProvider",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
         },
         {
           "class": "Identifier",

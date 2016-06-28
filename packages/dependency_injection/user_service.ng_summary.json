@@ -21,6 +21,13 @@
     "6": "user_service.dart"
   },
   "type": {
+    "User": {
+      "class": "Identifier",
+      "name": "User",
+      "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
+      "prefix": null,
+      "value": null
+    },
     "UserService": {
       "class": "Type",
       "name": "UserService",
@@ -29,13 +36,6 @@
       "isHost": false,
       "value": null,
       "diDeps": []
-    },
-    "User": {
-      "class": "Identifier",
-      "name": "User",
-      "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
-      "prefix": null,
-      "value": null
     }
   },
   "alias": {}

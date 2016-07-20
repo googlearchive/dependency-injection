@@ -27,19 +27,19 @@
     "6": "test_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "heroes/hero.ngfactory.dart",
+        "1": "heroes/hero.template.dart",
         "4": "i1"
       },
       {
-        "1": "heroes/hero_list_component.ngfactory.dart",
+        "1": "heroes/hero_list_component.template.dart",
         "4": "i2"
       },
       {
-        "1": "heroes/hero_service.ngfactory.dart",
+        "1": "heroes/hero_service.template.dart",
         "4": "i3"
       }
     ]

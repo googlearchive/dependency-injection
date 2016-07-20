@@ -18,15 +18,15 @@
     "6": "car_injector.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "../logger_service.ngfactory.dart",
+        "1": "../logger_service.template.dart",
         "4": "i1"
       },
       {
-        "1": "car.ngfactory.dart",
+        "1": "car.template.dart",
         "4": "i2"
       }
     ]

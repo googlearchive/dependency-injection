@@ -51,6 +51,7 @@
           "value": null,
           "diDeps": []
         },
+        "useProperty": null,
         "multi": false,
         "deps": [
           {

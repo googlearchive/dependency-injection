@@ -213,27 +213,27 @@
     "6": "providers_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "app_config.ngfactory.dart",
+        "1": "app_config.template.dart",
         "4": "i1"
       },
       {
-        "1": "heroes/hero_service_provider.ngfactory.dart",
+        "1": "heroes/hero_service_provider.template.dart",
         "4": "i2"
       },
       {
-        "1": "heroes/hero_service.ngfactory.dart",
+        "1": "heroes/hero_service.template.dart",
         "4": "i3"
       },
       {
-        "1": "logger_service.ngfactory.dart",
+        "1": "logger_service.template.dart",
         "4": "i4"
       },
       {
-        "1": "user_service.ngfactory.dart",
+        "1": "user_service.template.dart",
         "4": "i5"
       }
     ]
@@ -333,6 +333,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -421,6 +422,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -518,6 +520,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -638,6 +641,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -691,6 +695,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -817,6 +822,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -845,6 +851,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -955,6 +962,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -987,6 +995,7 @@
           },
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -1080,6 +1089,7 @@
             "value": null
           },
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -1211,6 +1221,7 @@
             "prefix": null,
             "value": null
           },
+          "useProperty": null,
           "multi": false,
           "deps": [
             {
@@ -1286,6 +1297,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -1316,6 +1328,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -1402,6 +1415,7 @@
             "value": null
           },
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }

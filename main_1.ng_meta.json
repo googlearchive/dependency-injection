@@ -18,15 +18,15 @@
     "6": "main_1.dart",
     "7": [
       {
-        "1": "package:angular2/platform/browser_static.ngfactory.dart",
+        "1": "package:angular2/platform/browser_static.template.dart",
         "4": "i0"
       },
       {
-        "1": "package:dependency_injection/app_component_1.ngfactory.dart",
+        "1": "package:dependency_injection/app_component_1.template.dart",
         "4": "i1"
       },
       {
-        "1": "package:dependency_injection/heroes/hero_service_1.ngfactory.dart",
+        "1": "package:dependency_injection/heroes/hero_service_1.template.dart",
         "4": "i2"
       }
     ]

@@ -43,27 +43,27 @@
     "6": "car_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "car.ngfactory.dart",
+        "1": "car.template.dart",
         "4": "i1"
       },
       {
-        "1": "car_creations.ngfactory.dart",
+        "1": "car_creations.template.dart",
         "4": "i2"
       },
       {
-        "1": "car_factory.ngfactory.dart",
+        "1": "car_factory.template.dart",
         "4": "i3"
       },
       {
-        "1": "car_injector.ngfactory.dart",
+        "1": "car_injector.template.dart",
         "4": "i4"
       },
       {
-        "1": "car_no_di.ngfactory.dart",
+        "1": "car_no_di.template.dart",
         "4": "i5"
       }
     ]
@@ -239,6 +239,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -269,6 +270,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -299,6 +301,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }

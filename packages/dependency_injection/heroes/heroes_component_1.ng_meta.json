@@ -28,15 +28,15 @@
     "6": "heroes_component_1.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "hero_list_component_2.ngfactory.dart",
+        "1": "hero_list_component_2.template.dart",
         "4": "i1"
       },
       {
-        "1": "hero_service_1.ngfactory.dart",
+        "1": "hero_service_1.template.dart",
         "4": "i2"
       }
     ]
@@ -99,6 +99,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }

@@ -48,23 +48,23 @@
     "6": "app_component_2.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "app_config.ngfactory.dart",
+        "1": "app_config.template.dart",
         "4": "i1"
       },
       {
-        "1": "car/car_component.ngfactory.dart",
+        "1": "car/car_component.template.dart",
         "4": "i2"
       },
       {
-        "1": "heroes/heroes_component_1.ngfactory.dart",
+        "1": "heroes/heroes_component_1.template.dart",
         "4": "i3"
       },
       {
-        "1": "logger_service.ngfactory.dart",
+        "1": "logger_service.template.dart",
         "4": "i4"
       }
     ]
@@ -150,6 +150,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -176,6 +177,7 @@
             "value": null
           },
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }

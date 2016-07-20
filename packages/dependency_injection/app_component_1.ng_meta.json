@@ -31,15 +31,15 @@
     "6": "app_component_1.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "car/car_component.ngfactory.dart",
+        "1": "car/car_component.template.dart",
         "4": "i1"
       },
       {
-        "1": "heroes/heroes_component_1.ngfactory.dart",
+        "1": "heroes/heroes_component_1.template.dart",
         "4": "i2"
       }
     ]

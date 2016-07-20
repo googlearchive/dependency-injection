@@ -39,19 +39,19 @@
     "6": "hero_service_2.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "../logger_service.ngfactory.dart",
+        "1": "../logger_service.template.dart",
         "4": "i1"
       },
       {
-        "1": "hero.ngfactory.dart",
+        "1": "hero.template.dart",
         "4": "i2"
       },
       {
-        "1": "mock_heroes.ngfactory.dart",
+        "1": "mock_heroes.template.dart",
         "4": "i3"
       }
     ]

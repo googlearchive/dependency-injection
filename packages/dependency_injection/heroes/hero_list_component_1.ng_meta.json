@@ -23,15 +23,15 @@
     "6": "hero_list_component_1.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "hero.ngfactory.dart",
+        "1": "hero.template.dart",
         "4": "i1"
       },
       {
-        "1": "mock_heroes.ngfactory.dart",
+        "1": "mock_heroes.template.dart",
         "4": "i2"
       }
     ]

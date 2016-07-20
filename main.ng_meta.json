@@ -18,15 +18,15 @@
     "6": "main.dart",
     "7": [
       {
-        "1": "package:angular2/platform/browser_static.ngfactory.dart",
+        "1": "package:angular2/platform/browser_static.template.dart",
         "4": "i0"
       },
       {
-        "1": "package:dependency_injection/app_component.ngfactory.dart",
+        "1": "package:dependency_injection/app_component.template.dart",
         "4": "i1"
       },
       {
-        "1": "package:dependency_injection/providers_component.ngfactory.dart",
+        "1": "package:dependency_injection/providers_component.template.dart",
         "4": "i2"
       }
     ]

@@ -77,39 +77,39 @@
     "6": "app_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "app_config.ngfactory.dart",
+        "1": "app_config.template.dart",
         "4": "i1"
       },
       {
-        "1": "car/car_component.ngfactory.dart",
+        "1": "car/car_component.template.dart",
         "4": "i2"
       },
       {
-        "1": "heroes/heroes_component.ngfactory.dart",
+        "1": "heroes/heroes_component.template.dart",
         "4": "i3"
       },
       {
-        "1": "logger_service.ngfactory.dart",
+        "1": "logger_service.template.dart",
         "4": "i4"
       },
       {
-        "1": "user_service.ngfactory.dart",
+        "1": "user_service.template.dart",
         "4": "i5"
       },
       {
-        "1": "injector_component.ngfactory.dart",
+        "1": "injector_component.template.dart",
         "4": "i6"
       },
       {
-        "1": "test_component.ngfactory.dart",
+        "1": "test_component.template.dart",
         "4": "i7"
       },
       {
-        "1": "providers_component.ngfactory.dart",
+        "1": "providers_component.template.dart",
         "4": "i8"
       }
     ]
@@ -217,6 +217,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -247,6 +248,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -273,6 +275,7 @@
             "prefix": null,
             "value": null
           },
+          "useProperty": null,
           "multi": false,
           "deps": null
         }

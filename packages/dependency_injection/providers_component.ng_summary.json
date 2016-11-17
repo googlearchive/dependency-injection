@@ -1173,7 +1173,29 @@
         "styleUrls": [],
         "ngContentSelectors": []
       },
-      "providers": [],
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "Logger",
+              "moduleUrl": null,
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "useProperty": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

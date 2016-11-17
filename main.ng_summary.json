@@ -9,10 +9,6 @@
       {
         "1": "package:dependency_injection/app_component.dart",
         "5": false
-      },
-      {
-        "1": "package:dependency_injection/providers_component.dart",
-        "5": false
       }
     ],
     "6": "main.dart"

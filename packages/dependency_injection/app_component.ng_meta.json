@@ -184,7 +184,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <h1>{{title}}</h1>\n      <my-car></my-car>\n      <my-injectors></my-injectors>\n      <my-tests></my-tests>\n      <h2>User</h2>\n      <p id=\"user\">\n        {{userInfo}}\n        <button (click)=\"nextUser()\">Next User</button>\n      <p>\n      <my-heroes id=\"authorized\" *ngIf=\"isAuthorized\"></my-heroes>\n      <my-heroes id=\"unauthorized\" *ngIf=\"!isAuthorized\"></my-heroes>",
+        "template": "      <h1>{{title}}</h1>\n      <my-car></my-car>\n      <my-injectors></my-injectors>\n      <my-tests></my-tests>\n      <h2>User</h2>\n      <p id=\"user\">\n        {{userInfo}}\n        <button (click)=\"nextUser()\">Next User</button>\n      <p>\n      <my-heroes id=\"authorized\" *ngIf=\"isAuthorized\"></my-heroes>\n      <my-heroes id=\"unauthorized\" *ngIf=\"!isAuthorized\"></my-heroes>\n      <my-providers></my-providers>\n      ",
         "templateUrl": "asset:dependency_injection/lib/app_component.dart",
         "styles": [],
         "styleUrls": [],

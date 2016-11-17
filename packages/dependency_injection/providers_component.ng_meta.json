@@ -1488,7 +1488,31 @@
         "styleUrls": [],
         "ngContentSelectors": []
       },
-      "providers": [],
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "Logger",
+              "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "useProperty": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

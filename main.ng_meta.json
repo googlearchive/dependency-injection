@@ -9,10 +9,6 @@
       {
         "1": "package:dependency_injection/app_component.dart",
         "5": false
-      },
-      {
-        "1": "package:dependency_injection/providers_component.dart",
-        "5": false
       }
     ],
     "6": "main.dart",
@@ -24,10 +20,6 @@
       {
         "1": "package:dependency_injection/app_component.template.dart",
         "4": "i1"
-      },
-      {
-        "1": "package:dependency_injection/providers_component.template.dart",
-        "4": "i2"
       }
     ]
   },

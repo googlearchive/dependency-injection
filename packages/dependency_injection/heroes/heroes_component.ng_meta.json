@@ -139,7 +139,6 @@
             "prefix": null,
             "value": null
           },
-          "useProperty": null,
           "multi": false,
           "deps": [
             {

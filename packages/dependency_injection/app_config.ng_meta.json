@@ -23,9 +23,9 @@
       "prefix": null,
       "value": null
     },
-    "heroDiConfig": {
+    "AppConfig": {
       "class": "Identifier",
-      "name": "heroDiConfig",
+      "name": "AppConfig",
       "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
       "prefix": null,
       "value": null
@@ -59,15 +59,14 @@
             "prefix": null,
             "value": null
           },
-          "useProperty": null,
           "multi": false,
           "deps": []
         }
       ]
     },
-    "AppConfig": {
+    "heroDiConfig": {
       "class": "Identifier",
-      "name": "AppConfig",
+      "name": "heroDiConfig",
       "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
       "prefix": null,
       "value": null

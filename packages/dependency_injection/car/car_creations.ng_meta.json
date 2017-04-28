@@ -16,23 +16,9 @@
     ]
   },
   "type": {
-    "simpleCar": {
-      "class": "Identifier",
-      "name": "simpleCar",
-      "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
-      "prefix": null,
-      "value": null
-    },
     "Engine2": {
       "class": "Identifier",
       "name": "Engine2",
-      "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
-      "prefix": null,
-      "value": null
-    },
-    "superCar": {
-      "class": "Identifier",
-      "name": "superCar",
       "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
       "prefix": null,
       "value": null
@@ -47,6 +33,20 @@
     "MockTires": {
       "class": "Identifier",
       "name": "MockTires",
+      "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
+      "prefix": null,
+      "value": null
+    },
+    "simpleCar": {
+      "class": "Identifier",
+      "name": "simpleCar",
+      "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
+      "prefix": null,
+      "value": null
+    },
+    "superCar": {
+      "class": "Identifier",
+      "name": "superCar",
       "moduleUrl": "asset:dependency_injection/lib/car/car_creations.dart",
       "prefix": null,
       "value": null

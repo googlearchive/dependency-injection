@@ -55,24 +55,6 @@
     ]
   },
   "type": {
-    "Engine": {
-      "class": "Type",
-      "name": "Engine",
-      "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-      "prefix": null,
-      "isHost": false,
-      "value": null,
-      "diDeps": []
-    },
-    "Tires": {
-      "class": "Type",
-      "name": "Tires",
-      "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
-      "prefix": null,
-      "isHost": false,
-      "value": null,
-      "diDeps": []
-    },
     "Car": {
       "class": "Type",
       "name": "Car",
@@ -122,6 +104,24 @@
           "isValue": false
         }
       ]
+    },
+    "Engine": {
+      "class": "Type",
+      "name": "Engine",
+      "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": []
+    },
+    "Tires": {
+      "class": "Type",
+      "name": "Tires",
+      "moduleUrl": "asset:dependency_injection/lib/car/car.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": []
     }
   },
   "alias": {}

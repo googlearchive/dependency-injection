@@ -239,19 +239,141 @@
     ]
   },
   "type": {
-    "template": {
+    "BetterLogger": {
+      "class": "Type",
+      "name": "BetterLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": []
+    },
+    "EvenBetterLogger": {
+      "class": "Type",
+      "name": "EvenBetterLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": [
+        {
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "UserService",
+              "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "value": null,
+          "isAttribute": false,
+          "isSelf": false,
+          "isHost": false,
+          "isSkipSelf": false,
+          "isOptional": false,
+          "isValue": false
+        }
+      ]
+    },
+    "NewLogger": {
+      "class": "Type",
+      "name": "NewLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "isHost": false,
+      "value": null,
+      "diDeps": []
+    },
+    "OldLogger": {
       "class": "Identifier",
-      "name": "template",
+      "name": "OldLogger",
       "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
       "prefix": null,
       "value": null
     },
-    "silentLogger": {
-      "class": "Identifier",
-      "name": "silentLogger",
-      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-      "prefix": null,
-      "value": null
+    "Provider10Component": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "provider-10",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "Provider10Component",
+        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "Logger",
+                "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": true,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 2,
+        "template": "{{log}}",
+        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "Logger",
+              "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
     },
     "Provider1Component": {
       "class": "Directive",
@@ -332,7 +454,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -420,7 +541,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -428,15 +548,6 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
-    },
-    "BetterLogger": {
-      "class": "Type",
-      "name": "BetterLogger",
-      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-      "prefix": null,
-      "isHost": false,
-      "value": null,
-      "diDeps": []
     },
     "Provider4Component": {
       "class": "Directive",
@@ -517,7 +628,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -525,36 +635,6 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
-    },
-    "EvenBetterLogger": {
-      "class": "Type",
-      "name": "EvenBetterLogger",
-      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-      "prefix": null,
-      "isHost": false,
-      "value": null,
-      "diDeps": [
-        {
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Identifier",
-              "name": "UserService",
-              "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
-              "prefix": null,
-              "value": null
-            },
-            "identifierIsInstance": false
-          },
-          "value": null,
-          "isAttribute": false,
-          "isSelf": false,
-          "isHost": false,
-          "isSkipSelf": false,
-          "isOptional": false,
-          "isValue": false
-        }
-      ]
     },
     "Provider5Component": {
       "class": "Directive",
@@ -635,7 +715,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -687,7 +766,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -695,22 +773,6 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
-    },
-    "NewLogger": {
-      "class": "Type",
-      "name": "NewLogger",
-      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-      "prefix": null,
-      "isHost": false,
-      "value": null,
-      "diDeps": []
-    },
-    "OldLogger": {
-      "class": "Identifier",
-      "name": "OldLogger",
-      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-      "prefix": null,
-      "value": null
     },
     "Provider6aComponent": {
       "class": "Directive",
@@ -811,7 +873,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -840,7 +901,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -948,7 +1008,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -981,7 +1040,6 @@
           },
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -989,13 +1047,6 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
-    },
-    "SilentLogger": {
-      "class": "Identifier",
-      "name": "SilentLogger",
-      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-      "prefix": null,
-      "value": null
     },
     "Provider7Component": {
       "class": "Directive",
@@ -1074,7 +1125,6 @@
             "value": null
           },
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -1201,7 +1251,6 @@
             "prefix": null,
             "value": null
           },
-          "useProperty": null,
           "multi": false,
           "deps": [
             {
@@ -1273,7 +1322,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         },
@@ -1304,7 +1352,6 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -1390,89 +1437,6 @@
             "value": null
           },
           "useFactory": null,
-          "useProperty": null,
-          "multi": false,
-          "deps": null
-        }
-      ],
-      "viewProviders": [],
-      "queries": [],
-      "viewQueries": []
-    },
-    "Provider10Component": {
-      "class": "Directive",
-      "isComponent": true,
-      "selector": "provider-10",
-      "exportAs": null,
-      "type": {
-        "class": "Type",
-        "name": "Provider10Component",
-        "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
-        "prefix": null,
-        "isHost": false,
-        "value": null,
-        "diDeps": [
-          {
-            "token": {
-              "value": null,
-              "identifier": {
-                "class": "Identifier",
-                "name": "Logger",
-                "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
-                "prefix": null,
-                "value": null
-              },
-              "identifierIsInstance": false
-            },
-            "value": null,
-            "isAttribute": false,
-            "isSelf": false,
-            "isHost": false,
-            "isSkipSelf": false,
-            "isOptional": true,
-            "isValue": false
-          }
-        ]
-      },
-      "changeDetection": 6,
-      "inputs": {},
-      "inputTypes": {},
-      "outputs": {},
-      "hostListeners": {},
-      "hostProperties": {},
-      "hostAttributes": {},
-      "lifecycleHooks": [
-        0
-      ],
-      "template": {
-        "encapsulation": 2,
-        "template": "{{log}}",
-        "templateUrl": "asset:dependency_injection/lib/providers_component.dart",
-        "styles": [],
-        "styleUrls": [],
-        "ngContentSelectors": []
-      },
-      "providers": [
-        {
-          "class": "Provider",
-          "token": {
-            "value": null,
-            "identifier": {
-              "class": "Type",
-              "name": "Logger",
-              "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
-              "prefix": null,
-              "isHost": false,
-              "value": null,
-              "diDeps": []
-            },
-            "identifierIsInstance": false
-          },
-          "useClass": null,
-          "useExisting": null,
-          "useValue": null,
-          "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
@@ -1515,6 +1479,27 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
+    },
+    "SilentLogger": {
+      "class": "Identifier",
+      "name": "SilentLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "silentLogger": {
+      "class": "Identifier",
+      "name": "silentLogger",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "template": {
+      "class": "Identifier",
+      "name": "template",
+      "moduleUrl": "asset:dependency_injection/lib/providers_component.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}

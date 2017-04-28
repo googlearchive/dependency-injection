@@ -27,6 +27,20 @@
     "6": "test_component.dart"
   },
   "type": {
+    "ExpectResult": {
+      "class": "Identifier",
+      "name": "ExpectResult",
+      "moduleUrl": "asset:dependency_injection/lib/test_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "MockHeroService": {
+      "class": "Identifier",
+      "name": "MockHeroService",
+      "moduleUrl": "asset:dependency_injection/lib/test_component.dart",
+      "prefix": null,
+      "value": null
+    },
     "TestComponent": {
       "class": "Directive",
       "isComponent": true,
@@ -62,20 +76,6 @@
       "queries": [],
       "viewQueries": []
     },
-    "MockHeroService": {
-      "class": "Identifier",
-      "name": "MockHeroService",
-      "moduleUrl": "asset:dependency_injection/lib/test_component.dart",
-      "prefix": null,
-      "value": null
-    },
-    "runTests": {
-      "class": "Identifier",
-      "name": "runTests",
-      "moduleUrl": "asset:dependency_injection/lib/test_component.dart",
-      "prefix": null,
-      "value": null
-    },
     "expect": {
       "class": "Identifier",
       "name": "expect",
@@ -83,16 +83,16 @@
       "prefix": null,
       "value": null
     },
-    "ExpectResult": {
+    "it": {
       "class": "Identifier",
-      "name": "ExpectResult",
+      "name": "it",
       "moduleUrl": "asset:dependency_injection/lib/test_component.dart",
       "prefix": null,
       "value": null
     },
-    "it": {
+    "runTests": {
       "class": "Identifier",
-      "name": "it",
+      "name": "runTests",
       "moduleUrl": "asset:dependency_injection/lib/test_component.dart",
       "prefix": null,
       "value": null

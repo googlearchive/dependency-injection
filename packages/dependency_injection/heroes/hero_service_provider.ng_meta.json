@@ -40,6 +40,13 @@
     ]
   },
   "type": {
+    "heroServiceFactory": {
+      "class": "Identifier",
+      "name": "heroServiceFactory",
+      "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_provider.dart",
+      "prefix": null,
+      "value": null
+    },
     "heroServiceProvider": {
       "class": "Identifier",
       "name": "heroServiceProvider",
@@ -112,7 +119,6 @@
             "prefix": null,
             "value": null
           },
-          "useProperty": null,
           "multi": false,
           "deps": [
             {
@@ -158,13 +164,6 @@
           ]
         }
       ]
-    },
-    "heroServiceFactory": {
-      "class": "Identifier",
-      "name": "heroServiceFactory",
-      "moduleUrl": "asset:dependency_injection/lib/heroes/hero_service_provider.dart",
-      "prefix": null,
-      "value": null
     }
   },
   "alias": {}

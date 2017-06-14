@@ -7,35 +7,35 @@
         "5": false
       },
       {
-        "1": "app_config.dart",
+        "1": "src/app_config.dart",
         "5": false
       },
       {
-        "1": "car/car_component.dart",
+        "1": "src/car/car_component.dart",
         "5": false
       },
       {
-        "1": "heroes/heroes_component.dart",
+        "1": "src/heroes/heroes_component.dart",
         "5": false
       },
       {
-        "1": "logger_service.dart",
+        "1": "src/logger_service.dart",
         "5": false
       },
       {
-        "1": "user_service.dart",
+        "1": "src/user_service.dart",
         "5": false
       },
       {
-        "1": "injector_component.dart",
+        "1": "src/injector_component.dart",
         "5": false
       },
       {
-        "1": "test_component.dart",
+        "1": "src/test_component.dart",
         "5": false
       },
       {
-        "1": "providers_component.dart",
+        "1": "src/providers_component.dart",
         "5": false
       }
     ],
@@ -145,7 +145,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <h1>{{title}}</h1>\n      <my-car></my-car>\n      <my-injectors></my-injectors>\n      <my-tests></my-tests>\n      <h2>User</h2>\n      <p id=\"user\">\n        {{userInfo}}\n        <button (click)=\"nextUser()\">Next User</button>\n      <p>\n      <my-heroes id=\"authorized\" *ngIf=\"isAuthorized\"></my-heroes>\n      <my-heroes id=\"unauthorized\" *ngIf=\"!isAuthorized\"></my-heroes>\n      <my-providers></my-providers>\n      ",
+        "template": "    <h1>{{title}}</h1>\n    <my-car></my-car>\n    <my-injectors></my-injectors>\n    <my-tests></my-tests>\n    <h2>User</h2>\n    <p id=\"user\">\n      {{userInfo}}\n      <button (click)=\"nextUser()\">Next User</button>\n    <p>\n    <my-heroes id=\"authorized\" *ngIf=\"isAuthorized\"></my-heroes>\n    <my-heroes id=\"unauthorized\" *ngIf=\"!isAuthorized\"></my-heroes>\n    <my-providers></my-providers>\n  ",
         "templateUrl": "asset:dependency_injection/lib/app_component.dart",
         "styles": [],
         "styleUrls": [],

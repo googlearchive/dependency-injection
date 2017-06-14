@@ -7,35 +7,35 @@
         "5": false
       },
       {
-        "1": "app_config.dart",
+        "1": "src/app_config.dart",
         "5": false
       },
       {
-        "1": "car/car_component.dart",
+        "1": "src/car/car_component.dart",
         "5": false
       },
       {
-        "1": "heroes/heroes_component.dart",
+        "1": "src/heroes/heroes_component.dart",
         "5": false
       },
       {
-        "1": "logger_service.dart",
+        "1": "src/logger_service.dart",
         "5": false
       },
       {
-        "1": "user_service.dart",
+        "1": "src/user_service.dart",
         "5": false
       },
       {
-        "1": "injector_component.dart",
+        "1": "src/injector_component.dart",
         "5": false
       },
       {
-        "1": "test_component.dart",
+        "1": "src/test_component.dart",
         "5": false
       },
       {
-        "1": "providers_component.dart",
+        "1": "src/providers_component.dart",
         "5": false
       }
     ],
@@ -84,35 +84,35 @@
         "4": "i0"
       },
       {
-        "1": "app_config.template.dart",
+        "1": "src/app_config.template.dart",
         "4": "i1"
       },
       {
-        "1": "car/car_component.template.dart",
+        "1": "src/car/car_component.template.dart",
         "4": "i2"
       },
       {
-        "1": "heroes/heroes_component.template.dart",
+        "1": "src/heroes/heroes_component.template.dart",
         "4": "i3"
       },
       {
-        "1": "logger_service.template.dart",
+        "1": "src/logger_service.template.dart",
         "4": "i4"
       },
       {
-        "1": "user_service.template.dart",
+        "1": "src/user_service.template.dart",
         "4": "i5"
       },
       {
-        "1": "injector_component.template.dart",
+        "1": "src/injector_component.template.dart",
         "4": "i6"
       },
       {
-        "1": "test_component.template.dart",
+        "1": "src/test_component.template.dart",
         "4": "i7"
       },
       {
-        "1": "providers_component.template.dart",
+        "1": "src/providers_component.template.dart",
         "4": "i8"
       }
     ]
@@ -137,7 +137,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "APP_CONFIG",
-                "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
+                "moduleUrl": "asset:dependency_injection/lib/src/app_config.dart",
                 "prefix": null,
                 "value": null
               },
@@ -157,7 +157,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "UserService",
-                "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
+                "moduleUrl": "asset:dependency_injection/lib/src/user_service.dart",
                 "prefix": null,
                 "value": null
               },
@@ -183,7 +183,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <h1>{{title}}</h1>\n      <my-car></my-car>\n      <my-injectors></my-injectors>\n      <my-tests></my-tests>\n      <h2>User</h2>\n      <p id=\"user\">\n        {{userInfo}}\n        <button (click)=\"nextUser()\">Next User</button>\n      <p>\n      <my-heroes id=\"authorized\" *ngIf=\"isAuthorized\"></my-heroes>\n      <my-heroes id=\"unauthorized\" *ngIf=\"!isAuthorized\"></my-heroes>\n      <my-providers></my-providers>\n      ",
+        "template": "    <h1>{{title}}</h1>\n    <my-car></my-car>\n    <my-injectors></my-injectors>\n    <my-tests></my-tests>\n    <h2>User</h2>\n    <p id=\"user\">\n      {{userInfo}}\n      <button (click)=\"nextUser()\">Next User</button>\n    <p>\n    <my-heroes id=\"authorized\" *ngIf=\"isAuthorized\"></my-heroes>\n    <my-heroes id=\"unauthorized\" *ngIf=\"!isAuthorized\"></my-heroes>\n    <my-providers></my-providers>\n  ",
         "templateUrl": "asset:dependency_injection/lib/app_component.dart",
         "styles": [],
         "styleUrls": [],
@@ -197,7 +197,7 @@
             "identifier": {
               "class": "Type",
               "name": "Logger",
-              "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
+              "moduleUrl": "asset:dependency_injection/lib/src/logger_service.dart",
               "prefix": null,
               "isHost": false,
               "value": null,
@@ -208,7 +208,7 @@
           "useClass": {
             "class": "Type",
             "name": "Logger",
-            "moduleUrl": "asset:dependency_injection/lib/logger_service.dart",
+            "moduleUrl": "asset:dependency_injection/lib/src/logger_service.dart",
             "prefix": null,
             "isHost": false,
             "value": null,
@@ -227,7 +227,7 @@
             "identifier": {
               "class": "Type",
               "name": "UserService",
-              "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
+              "moduleUrl": "asset:dependency_injection/lib/src/user_service.dart",
               "prefix": null,
               "isHost": false,
               "value": null,
@@ -238,7 +238,7 @@
           "useClass": {
             "class": "Type",
             "name": "UserService",
-            "moduleUrl": "asset:dependency_injection/lib/user_service.dart",
+            "moduleUrl": "asset:dependency_injection/lib/src/user_service.dart",
             "prefix": null,
             "isHost": false,
             "value": null,
@@ -257,7 +257,7 @@
             "identifier": {
               "class": "Identifier",
               "name": "APP_CONFIG",
-              "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
+              "moduleUrl": "asset:dependency_injection/lib/src/app_config.dart",
               "prefix": null,
               "value": null
             },
@@ -269,7 +269,7 @@
           "useFactory": {
             "class": "Identifier",
             "name": "heroDiConfigFactory",
-            "moduleUrl": "asset:dependency_injection/lib/app_config.dart",
+            "moduleUrl": "asset:dependency_injection/lib/src/app_config.dart",
             "prefix": null,
             "value": null
           },

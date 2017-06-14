@@ -1,0 +1,448 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "car/car.dart",
+        "5": false
+      },
+      {
+        "1": "heroes/hero.dart",
+        "5": false
+      },
+      {
+        "1": "heroes/hero_service.dart",
+        "5": false
+      },
+      {
+        "1": "heroes/hero_service_provider.dart",
+        "5": false
+      },
+      {
+        "1": "logger_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "InjectorComponent",
+        "5": [
+          {
+            "1": "Injector",
+            "4": "_injector"
+          }
+        ]
+      }
+    ],
+    "6": "injector_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "car/car.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "heroes/hero.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "heroes/hero_service.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "heroes/hero_service_provider.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "logger_service.template.dart",
+        "4": "i5"
+      }
+    ]
+  },
+  "type": {
+    "InjectorComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-injectors",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "InjectorComponent",
+        "moduleUrl": "asset:dependency_injection/lib/src/injector_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "Injector",
+                "moduleUrl": "asset:angular2/lib/src/core/di/injector.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "      <h2>Other Injections</h2>\n      <div id=\"car\">{{car.drive()}}</div>\n      <div id=\"hero\">{{hero.name}}</div>\n      <div id=\"rodent\">{{rodent}}</div>",
+        "templateUrl": "asset:dependency_injection/lib/src/injector_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "Car",
+              "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "Engine",
+                      "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                },
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "Tires",
+                      "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "Car",
+            "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": [
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "Engine",
+                    "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              },
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "Tires",
+                    "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              }
+            ]
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "Engine",
+              "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "Engine",
+            "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "Tires",
+              "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "Tires",
+            "moduleUrl": "asset:dependency_injection/lib/src/car/car.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "HeroService",
+              "moduleUrl": "asset:dependency_injection/lib/src/heroes/hero_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "Logger",
+                      "moduleUrl": "asset:dependency_injection/lib/src/logger_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                },
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "bool",
+                      "moduleUrl": null,
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": {
+            "class": "Identifier",
+            "name": "heroServiceFactory",
+            "moduleUrl": "asset:dependency_injection/lib/src/heroes/hero_service_provider.dart",
+            "prefix": null,
+            "value": null
+          },
+          "multi": false,
+          "deps": [
+            {
+              "token": {
+                "value": null,
+                "identifier": {
+                  "class": "Identifier",
+                  "name": "Logger",
+                  "moduleUrl": "asset:dependency_injection/lib/src/logger_service.dart",
+                  "prefix": null,
+                  "value": null
+                },
+                "identifierIsInstance": false
+              },
+              "value": null,
+              "isAttribute": false,
+              "isSelf": false,
+              "isHost": false,
+              "isSkipSelf": false,
+              "isOptional": false,
+              "isValue": false
+            },
+            {
+              "token": {
+                "value": null,
+                "identifier": {
+                  "class": "Identifier",
+                  "name": "UserService",
+                  "moduleUrl": "asset:dependency_injection/lib/src/user_service.dart",
+                  "prefix": null,
+                  "value": null
+                },
+                "identifierIsInstance": false
+              },
+              "value": null,
+              "isAttribute": false,
+              "isSelf": false,
+              "isHost": false,
+              "isSkipSelf": false,
+              "isOptional": false,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "Logger",
+              "moduleUrl": "asset:dependency_injection/lib/src/logger_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "Logger",
+            "moduleUrl": "asset:dependency_injection/lib/src/logger_service.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ROUS": {
+      "class": "Identifier",
+      "name": "ROUS",
+      "moduleUrl": "asset:dependency_injection/lib/src/injector_component.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

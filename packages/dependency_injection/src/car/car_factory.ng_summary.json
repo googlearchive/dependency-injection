@@ -1,0 +1,22 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "car.dart",
+        "5": false
+      }
+    ],
+    "6": "car_factory.dart"
+  },
+  "type": {
+    "CarFactory": {
+      "class": "Identifier",
+      "name": "CarFactory",
+      "moduleUrl": "asset:dependency_injection/lib/src/car/car_factory.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

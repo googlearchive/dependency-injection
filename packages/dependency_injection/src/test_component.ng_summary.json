@@ -1,0 +1,102 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "heroes/hero.dart",
+        "5": false
+      },
+      {
+        "1": "heroes/hero_list_component.dart",
+        "5": false
+      },
+      {
+        "1": "heroes/hero_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "TestComponent"
+      }
+    ],
+    "6": "test_component.dart"
+  },
+  "type": {
+    "ExpectResult": {
+      "class": "Identifier",
+      "name": "ExpectResult",
+      "moduleUrl": "asset:dependency_injection/lib/src/test_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "MockHeroService": {
+      "class": "Identifier",
+      "name": "MockHeroService",
+      "moduleUrl": "asset:dependency_injection/lib/src/test_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "TestComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-tests",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "TestComponent",
+        "moduleUrl": "asset:dependency_injection/lib/src/test_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "      <h2>Tests</h2>\n      <p id=\"tests\">Tests {{results['pass']}}: {{results['message']}}</p>\n    ",
+        "templateUrl": "asset:dependency_injection/lib/src/test_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "expect": {
+      "class": "Identifier",
+      "name": "expect",
+      "moduleUrl": "asset:dependency_injection/lib/src/test_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "it": {
+      "class": "Identifier",
+      "name": "it",
+      "moduleUrl": "asset:dependency_injection/lib/src/test_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "runTests": {
+      "class": "Identifier",
+      "name": "runTests",
+      "moduleUrl": "asset:dependency_injection/lib/src/test_component.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

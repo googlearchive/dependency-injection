@@ -79,7 +79,11 @@ AppView<import1.HeroListComponent> viewFactory_HeroListComponent0(AppView<dynami
 class _ViewHeroListComponent1 extends AppView<import1.HeroListComponent> {
   import7.DivElement _el_0;
   import7.Text _text_1;
+  import7.Text _text_3;
+  import7.Text _text_5;
   var _expr_0;
+  var _expr_1;
+  var _expr_2;
   _ViewHeroListComponent1(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHeroListComponent0._renderType;
   }
@@ -89,6 +93,16 @@ class _ViewHeroListComponent1 extends AppView<import1.HeroListComponent> {
     _el_0 = doc.createElement('div');
     _text_1 = new import7.Text('');
     _el_0.append(_text_1);
+    import7.Text _text_2 = new import7.Text(' - ');
+    _el_0.append(_text_2);
+    _text_3 = new import7.Text('');
+    _el_0.append(_text_3);
+    import7.Text _text_4 = new import7.Text('\n      (');
+    _el_0.append(_text_4);
+    _text_5 = new import7.Text('');
+    _el_0.append(_text_5);
+    import7.Text _text_6 = new import7.Text(')');
+    _el_0.append(_text_6);
     init0(_el_0);
     return null;
   }
@@ -96,10 +110,20 @@ class _ViewHeroListComponent1 extends AppView<import1.HeroListComponent> {
   @override
   void detectChangesInternal() {
     final import11.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = import8.interpolate3('', local_hero.id, ' - ', local_hero.name, '\n      (', (local_hero.isSecret ? 'secret' : 'public'), ')');
+    final currVal_0 = import8.interpolate0(local_hero.id);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
+    }
+    final currVal_1 = import8.interpolate0(local_hero.name);
+    if (!identical(_expr_1, currVal_1)) {
+      _text_3.text = currVal_1;
+      _expr_1 = currVal_1;
+    }
+    final currVal_2 = import8.interpolate0((local_hero.isSecret ? 'secret' : 'public'));
+    if (!identical(_expr_2, currVal_2)) {
+      _text_5.text = currVal_2;
+      _expr_2 = currVal_2;
     }
   }
 }

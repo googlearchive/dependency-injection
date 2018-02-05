@@ -32,8 +32,10 @@ const List<dynamic> styles$TestComponent = const [];
 class ViewTestComponent0 extends AppView<import1.TestComponent> {
   import2.Element _el_0;
   import2.Element _el_2;
-  import2.Text _text_3;
+  import2.Text _text_4;
+  import2.Text _text_6;
   var _expr_0;
+  var _expr_1;
   static RenderComponentType _renderType;
   ViewTestComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-tests');
@@ -49,8 +51,14 @@ class ViewTestComponent0 extends AppView<import1.TestComponent> {
     _el_0.append(_text_1);
     _el_2 = createAndAppend(doc, 'p', parentRenderNode);
     createAttr(_el_2, 'id', 'tests');
-    _text_3 = new import2.Text('');
+    import2.Text _text_3 = new import2.Text('Tests ');
     _el_2.append(_text_3);
+    _text_4 = new import2.Text('');
+    _el_2.append(_text_4);
+    import2.Text _text_5 = new import2.Text(': ');
+    _el_2.append(_text_5);
+    _text_6 = new import2.Text('');
+    _el_2.append(_text_6);
     init(const [], null);
     return null;
   }
@@ -58,10 +66,15 @@ class ViewTestComponent0 extends AppView<import1.TestComponent> {
   @override
   void detectChangesInternal() {
     final import1.TestComponent _ctx = ctx;
-    final currVal_0 = import6.interpolate2('Tests ', _ctx.results['pass'], ': ', _ctx.results['message'], '');
+    final currVal_0 = import6.interpolate0(_ctx.results['pass']);
     if (!identical(_expr_0, currVal_0)) {
-      _text_3.text = currVal_0;
+      _text_4.text = currVal_0;
       _expr_0 = currVal_0;
+    }
+    final currVal_1 = import6.interpolate0(_ctx.results['message']);
+    if (!identical(_expr_1, currVal_1)) {
+      _text_6.text = currVal_1;
+      _expr_1 = currVal_1;
     }
   }
 }

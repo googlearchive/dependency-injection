@@ -83,14 +83,13 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import2.Element _el_7;
   import2.Text _text_8;
   import2.ButtonElement _el_9;
-  import2.Element _el_11;
+  ViewContainer _appEl_11;
+  NgIf _NgIf_11_7;
   ViewContainer _appEl_12;
   NgIf _NgIf_12_7;
-  ViewContainer _appEl_13;
-  NgIf _NgIf_13_7;
-  import2.Element _el_14;
-  import13.ViewProvidersComponent0 _compView_14;
-  import14.ProvidersComponent _ProvidersComponent_14_4;
+  import2.Element _el_13;
+  import13.ViewProvidersComponent0 _compView_13;
+  import14.ProvidersComponent _ProvidersComponent_13_4;
   var _expr_1;
   static RenderComponentType _renderType;
   ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import16.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -168,22 +167,21 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _el_9 = createAndAppend(doc, 'button', _el_7);
     import2.Text _text_10 = new import2.Text('Next User');
     _el_9.append(_text_10);
-    _el_11 = createAndAppend(doc, 'p', parentRenderNode);
+    var _anchor_11 = ngAnchor.clone(false);
+    parentRenderNode.append(_anchor_11);
+    _appEl_11 = new ViewContainer(11, null, this, _anchor_11);
+    TemplateRef _TemplateRef_11_6 = new TemplateRef(_appEl_11, viewFactory_AppComponent1);
+    _NgIf_11_7 = new NgIf(_appEl_11, _TemplateRef_11_6);
     var _anchor_12 = ngAnchor.clone(false);
-    _el_11.append(_anchor_12);
-    _appEl_12 = new ViewContainer(12, 11, this, _anchor_12);
-    TemplateRef _TemplateRef_12_6 = new TemplateRef(_appEl_12, viewFactory_AppComponent1);
+    parentRenderNode.append(_anchor_12);
+    _appEl_12 = new ViewContainer(12, null, this, _anchor_12);
+    TemplateRef _TemplateRef_12_6 = new TemplateRef(_appEl_12, viewFactory_AppComponent2);
     _NgIf_12_7 = new NgIf(_appEl_12, _TemplateRef_12_6);
-    var _anchor_13 = ngAnchor.clone(false);
-    _el_11.append(_anchor_13);
-    _appEl_13 = new ViewContainer(13, 11, this, _anchor_13);
-    TemplateRef _TemplateRef_13_6 = new TemplateRef(_appEl_13, viewFactory_AppComponent2);
-    _NgIf_13_7 = new NgIf(_appEl_13, _TemplateRef_13_6);
-    _compView_14 = new import13.ViewProvidersComponent0(this, 14);
-    _el_14 = _compView_14.rootEl;
-    _el_11.append(_el_14);
-    _ProvidersComponent_14_4 = new import14.ProvidersComponent();
-    _compView_14.create(_ProvidersComponent_14_4, []);
+    _compView_13 = new import13.ViewProvidersComponent0(this, 13);
+    _el_13 = _compView_13.rootEl;
+    parentRenderNode.append(_el_13);
+    _ProvidersComponent_13_4 = new import14.ProvidersComponent();
+    _compView_13.create(_ProvidersComponent_13_4, []);
     _el_9.addEventListener('click', eventHandler0(ctx.nextUser));
     init(const [], null);
     return null;
@@ -224,8 +222,8 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     if ((identical(token, import10.TestComponent) && (4 == nodeIndex))) {
       return _TestComponent_4_4;
     }
-    if ((identical(token, import14.ProvidersComponent) && (14 == nodeIndex))) {
-      return _ProvidersComponent_14_4;
+    if ((identical(token, import14.ProvidersComponent) && (13 == nodeIndex))) {
+      return _ProvidersComponent_13_4;
     }
     return notFoundResult;
   }
@@ -237,14 +235,14 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     if (firstCheck) {
       _InjectorComponent_3_4.ngOnInit();
     }
-    _NgIf_12_7.ngIf = _ctx.isAuthorized;
-    _NgIf_13_7.ngIf = !_ctx.isAuthorized;
+    _NgIf_11_7.ngIf = _ctx.isAuthorized;
+    _NgIf_12_7.ngIf = !_ctx.isAuthorized;
+    _appEl_11.detectChangesInNestedViews();
     _appEl_12.detectChangesInNestedViews();
-    _appEl_13.detectChangesInNestedViews();
     if (firstCheck) {
       (_text_1.text = (_ctx.title ?? ''));
     }
-    final currVal_1 = import18.interpolate0(_ctx.userInfo);
+    final currVal_1 = (_ctx.userInfo ?? '');
     if (!identical(_expr_1, currVal_1)) {
       _text_8.text = currVal_1;
       _expr_1 = currVal_1;
@@ -252,17 +250,17 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_2.detectChanges();
     _compView_3.detectChanges();
     _compView_4.detectChanges();
-    _compView_14.detectChanges();
+    _compView_13.detectChanges();
   }
 
   @override
   void destroyInternal() {
+    _appEl_11?.destroyNestedViews();
     _appEl_12?.destroyNestedViews();
-    _appEl_13?.destroyNestedViews();
     _compView_2?.destroy();
     _compView_3?.destroy();
     _compView_4?.destroy();
-    _compView_14?.destroy();
+    _compView_13?.destroy();
   }
 }
 
@@ -280,7 +278,7 @@ class _ViewAppComponent1 extends AppView<import1.AppComponent> {
   }
   dynamic get _HeroService_0_5 {
     if ((this.__HeroService_0_5 == null)) {
-      (__HeroService_0_5 = import20.heroServiceFactory(this.parentView.parentView.injectorGet(import8.Logger, this.parentView.viewData.parentIndex), this.parentView.parentView.injectorGet(import21.UserService, this.parentView.viewData.parentIndex)));
+      (__HeroService_0_5 = import20.heroServiceFactory(this.parentView.injectorGet(import8.Logger, this.viewData.parentIndex), this.parentView.injectorGet(import21.UserService, this.viewData.parentIndex)));
     }
     return this.__HeroService_0_5;
   }
@@ -332,7 +330,7 @@ class _ViewAppComponent2 extends AppView<import1.AppComponent> {
   }
   dynamic get _HeroService_0_5 {
     if ((this.__HeroService_0_5 == null)) {
-      (__HeroService_0_5 = import20.heroServiceFactory(this.parentView.parentView.injectorGet(import8.Logger, this.parentView.viewData.parentIndex), this.parentView.parentView.injectorGet(import21.UserService, this.parentView.viewData.parentIndex)));
+      (__HeroService_0_5 = import20.heroServiceFactory(this.parentView.injectorGet(import8.Logger, this.viewData.parentIndex), this.parentView.injectorGet(import21.UserService, this.viewData.parentIndex)));
     }
     return this.__HeroService_0_5;
   }

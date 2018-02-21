@@ -13,7 +13,6 @@ import 'car_creations.dart' as carCreations;
 import 'car_factory.dart';
 import 'car_injector.dart';
 import 'car_no_di.dart' as carNoDi;
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'car.template.dart' as _ref0;
 import 'car_creations.template.dart' as _ref1;
@@ -21,7 +20,6 @@ import 'car_factory.template.dart' as _ref2;
 import 'car_injector.template.dart' as _ref3;
 import 'car_no_di.template.dart' as _ref4;
 import 'package:angular/angular.template.dart' as _ref5;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'car_component.dart' as import1;
 import 'dart:html' as import2;
@@ -209,14 +207,12 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(CarComponent, CarComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerComponent(
-    CarComponent,
-    CarComponentNgFactory,
-  );
 }

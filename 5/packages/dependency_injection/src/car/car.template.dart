@@ -8,9 +8,9 @@
 import 'car.dart';
 export 'car.dart';
 import 'package:angular/angular.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
+import 'package:dependency_injection/src/car/car.dart' as _i1;
 
 var _visited = false;
 void initReflector() {
@@ -18,30 +18,13 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerFactory(Engine, () => new Engine());
+  _ngRef.registerFactory(Tires, () => new Tires());
+  _ngRef.registerFactory(Car, (_i1.Engine p0, _i1.Tires p1) => new Car(p0, p1));
+  _ngRef.registerDependencies(Car, const [
+    const [_i1.Engine],
+    const [_i1.Tires]
+  ]);
   _ref0.initReflector();
-  _ngRef.registerFactory(
-    Engine,
-    () => new Engine(),
-  );
-
-  _ngRef.registerFactory(
-    Tires,
-    () => new Tires(),
-  );
-
-  _ngRef.registerFactory(
-    Car,
-    (Engine p0, Tires p1) => new Car(p0, p1),
-  );
-  _ngRef.registerDependencies(
-    Car,
-    const [
-      const [
-        Engine,
-      ],
-      const [
-        Tires,
-      ],
-    ],
-  );
 }

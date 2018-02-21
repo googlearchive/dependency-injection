@@ -16,7 +16,6 @@ import 'src/user_service.dart';
 import 'src/injector_component.dart';
 import 'src/test_component.dart';
 import 'src/providers_component.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'src/app_config.template.dart' as _ref1;
@@ -27,7 +26,6 @@ import 'src/logger_service.template.dart' as _ref5;
 import 'src/providers_component.template.dart' as _ref6;
 import 'src/test_component.template.dart' as _ref7;
 import 'src/user_service.template.dart' as _ref8;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'app_component.dart' as import1;
 import 'dart:html' as import2;
@@ -440,6 +438,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(AppComponent, AppComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -449,8 +449,4 @@ void initReflector() {
   _ref6.initReflector();
   _ref7.initReflector();
   _ref8.initReflector();
-  _ngRef.registerComponent(
-    AppComponent,
-    AppComponentNgFactory,
-  );
 }

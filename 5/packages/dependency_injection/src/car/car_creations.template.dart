@@ -8,7 +8,6 @@
 import 'car_creations.dart';
 export 'car_creations.dart';
 import 'car.dart';
-// Required for initReflector().
 import 'car.template.dart' as _ref0;
 
 var _visited = false;
@@ -17,5 +16,6 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
 }

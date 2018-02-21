@@ -13,7 +13,6 @@ import 'heroes/hero_service_provider.dart';
 import 'heroes/hero_service.dart';
 import 'logger_service.dart';
 import 'user_service.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'app_config.template.dart' as _ref0;
 import 'heroes/hero_service.template.dart' as _ref1;
@@ -21,7 +20,7 @@ import 'heroes/hero_service_provider.template.dart' as _ref2;
 import 'logger_service.template.dart' as _ref3;
 import 'package:angular/angular.template.dart' as _ref4;
 import 'user_service.template.dart' as _ref5;
-
+import 'package:dependency_injection/src/user_service.dart' as _i1;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'providers_component.dart' as import1;
 import 'dart:html' as import2;
@@ -1207,77 +1206,28 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(Provider1Component, Provider1ComponentNgFactory);
+  _ngRef.registerComponent(Provider3Component, Provider3ComponentNgFactory);
+  _ngRef.registerFactory(BetterLogger, () => new BetterLogger());
+  _ngRef.registerComponent(Provider4Component, Provider4ComponentNgFactory);
+  _ngRef.registerFactory(EvenBetterLogger, (_i1.UserService p0) => new EvenBetterLogger(p0));
+  _ngRef.registerDependencies(EvenBetterLogger, const [
+    const [_i1.UserService]
+  ]);
+  _ngRef.registerComponent(Provider5Component, Provider5ComponentNgFactory);
+  _ngRef.registerFactory(NewLogger, () => new NewLogger());
+  _ngRef.registerComponent(Provider6aComponent, Provider6aComponentNgFactory);
+  _ngRef.registerComponent(Provider6bComponent, Provider6bComponentNgFactory);
+  _ngRef.registerComponent(Provider7Component, Provider7ComponentNgFactory);
+  _ngRef.registerComponent(Provider8Component, Provider8ComponentNgFactory);
+  _ngRef.registerComponent(Provider9Component, Provider9ComponentNgFactory);
+  _ngRef.registerComponent(Provider10Component, Provider10ComponentNgFactory);
+  _ngRef.registerComponent(ProvidersComponent, ProvidersComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
   _ref5.initReflector();
-  _ngRef.registerComponent(
-    Provider1Component,
-    Provider1ComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    Provider3Component,
-    Provider3ComponentNgFactory,
-  );
-  _ngRef.registerFactory(
-    BetterLogger,
-    () => new BetterLogger(),
-  );
-
-  _ngRef.registerComponent(
-    Provider4Component,
-    Provider4ComponentNgFactory,
-  );
-  _ngRef.registerFactory(
-    EvenBetterLogger,
-    (UserService p0) => new EvenBetterLogger(p0),
-  );
-  _ngRef.registerDependencies(
-    EvenBetterLogger,
-    const [
-      const [
-        UserService,
-      ],
-    ],
-  );
-
-  _ngRef.registerComponent(
-    Provider5Component,
-    Provider5ComponentNgFactory,
-  );
-  _ngRef.registerFactory(
-    NewLogger,
-    () => new NewLogger(),
-  );
-
-  _ngRef.registerComponent(
-    Provider6aComponent,
-    Provider6aComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    Provider6bComponent,
-    Provider6bComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    Provider7Component,
-    Provider7ComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    Provider8Component,
-    Provider8ComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    Provider9Component,
-    Provider9ComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    Provider10Component,
-    Provider10ComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    ProvidersComponent,
-    ProvidersComponentNgFactory,
-  );
 }

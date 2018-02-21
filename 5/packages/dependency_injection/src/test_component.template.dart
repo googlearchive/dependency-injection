@@ -11,13 +11,11 @@ import 'package:angular/angular.dart';
 import 'heroes/hero.dart';
 import 'heroes/hero_list_component.dart';
 import 'heroes/hero_service.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'heroes/hero.template.dart' as _ref0;
 import 'heroes/hero_list_component.template.dart' as _ref1;
 import 'heroes/hero_service.template.dart' as _ref2;
 import 'package:angular/angular.template.dart' as _ref3;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'test_component.dart' as import1;
 import 'dart:html' as import2;
@@ -130,12 +128,10 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(TestComponent, TestComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
-  _ngRef.registerComponent(
-    TestComponent,
-    TestComponentNgFactory,
-  );
 }

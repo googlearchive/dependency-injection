@@ -8,7 +8,6 @@
 import 'user_service.dart';
 export 'user_service.dart';
 import 'package:angular/angular.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 
@@ -18,9 +17,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerFactory(UserService, () => new UserService());
   _ref0.initReflector();
-  _ngRef.registerFactory(
-    UserService,
-    () => new UserService(),
-  );
 }

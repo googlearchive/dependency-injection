@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -30,9 +28,9 @@ import 'package:angular/src/core/linker/app_view_utils.dart' as import6;
 import 'package:angular/angular.dart';
 import 'car/car.dart' as import8;
 import 'logger_service.dart' as import9;
-import 'heroes/hero_service_provider.dart' as import10;
-import 'user_service.dart' as import11;
-import 'heroes/hero_service.dart' as import12;
+import 'heroes/hero_service.dart' as import10;
+import 'heroes/hero_service_provider.dart' as import11;
+import 'user_service.dart' as import12;
 
 const List<dynamic> styles$InjectorComponent = const [];
 
@@ -105,77 +103,74 @@ const List<dynamic> styles$InjectorComponentHost = const [];
 
 class _ViewInjectorComponentHost0 extends AppView<dynamic> {
   ViewInjectorComponent0 _compView_0;
-  import1.InjectorComponent _InjectorComponent_0_4;
-  import8.Engine __Engine_0_5;
-  import8.Tires __Tires_0_6;
-  import8.Car __Car_0_7;
-  import9.Logger __Logger_0_8;
-  dynamic __HeroService_0_9;
+  import1.InjectorComponent _InjectorComponent_0_5;
+  import8.Engine __Engine_0_6;
+  import8.Tires __Tires_0_7;
+  import8.Car __Car_0_8;
+  import9.Logger __Logger_0_9;
+  import10.HeroService __HeroService_0_10;
   _ViewInjectorComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  import8.Engine get _Engine_0_5 {
-    if ((this.__Engine_0_5 == null)) {
-      (__Engine_0_5 = new import8.Engine());
+  import8.Engine get _Engine_0_6 {
+    if ((this.__Engine_0_6 == null)) {
+      (__Engine_0_6 = new import8.Engine());
     }
-    return this.__Engine_0_5;
+    return this.__Engine_0_6;
   }
 
-  import8.Tires get _Tires_0_6 {
-    if ((this.__Tires_0_6 == null)) {
-      (__Tires_0_6 = new import8.Tires());
+  import8.Tires get _Tires_0_7 {
+    if ((this.__Tires_0_7 == null)) {
+      (__Tires_0_7 = new import8.Tires());
     }
-    return this.__Tires_0_6;
+    return this.__Tires_0_7;
   }
 
-  import8.Car get _Car_0_7 {
-    if ((this.__Car_0_7 == null)) {
-      (__Car_0_7 = new import8.Car(this._Engine_0_5, this._Tires_0_6));
+  import8.Car get _Car_0_8 {
+    if ((this.__Car_0_8 == null)) {
+      (__Car_0_8 = new import8.Car(this._Engine_0_6, this._Tires_0_7));
     }
-    return this.__Car_0_7;
+    return this.__Car_0_8;
   }
 
-  import9.Logger get _Logger_0_8 {
-    if ((this.__Logger_0_8 == null)) {
-      (__Logger_0_8 = new import9.Logger());
+  import9.Logger get _Logger_0_9 {
+    if ((this.__Logger_0_9 == null)) {
+      (__Logger_0_9 = new import9.Logger());
     }
-    return this.__Logger_0_8;
+    return this.__Logger_0_9;
   }
 
-  dynamic get _HeroService_0_9 {
-    if ((this.__HeroService_0_9 == null)) {
-      (__HeroService_0_9 = import10.heroServiceFactory(this._Logger_0_8, this.injectorGet(import11.UserService, this.viewData.parentIndex)));
+  import10.HeroService get _HeroService_0_10 {
+    if ((this.__HeroService_0_10 == null)) {
+      (__HeroService_0_10 = import11.heroServiceFactory(this._Logger_0_9, this.injectorGet(import12.UserService, this.viewData.parentIndex)));
     }
-    return this.__HeroService_0_9;
+    return this.__HeroService_0_10;
   }
 
   @override
   ComponentRef build() {
     _compView_0 = new ViewInjectorComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _InjectorComponent_0_4 = new import1.InjectorComponent(injector(0));
-    _compView_0.create(_InjectorComponent_0_4, projectableNodes);
+    _InjectorComponent_0_5 = new import1.InjectorComponent(injector(0));
+    _compView_0.create(_InjectorComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.InjectorComponent>(0, this, rootEl, _InjectorComponent_0_4);
+    return new ComponentRef<import1.InjectorComponent>(0, this, rootEl, _InjectorComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.InjectorComponent) && (0 == nodeIndex))) {
-      return _InjectorComponent_0_4;
-    }
     if ((identical(token, import8.Engine) && (0 == nodeIndex))) {
-      return _Engine_0_5;
+      return _Engine_0_6;
     }
     if ((identical(token, import8.Tires) && (0 == nodeIndex))) {
-      return _Tires_0_6;
+      return _Tires_0_7;
     }
     if ((identical(token, import8.Car) && (0 == nodeIndex))) {
-      return _Car_0_7;
+      return _Car_0_8;
     }
     if ((identical(token, import9.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_8;
+      return _Logger_0_9;
     }
-    if ((identical(token, import12.HeroService) && (0 == nodeIndex))) {
-      return _HeroService_0_9;
+    if ((identical(token, import10.HeroService) && (0 == nodeIndex))) {
+      return _HeroService_0_10;
     }
     return notFoundResult;
   }
@@ -184,7 +179,7 @@ class _ViewInjectorComponentHost0 extends AppView<dynamic> {
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _InjectorComponent_0_4.ngOnInit();
+      _InjectorComponent_0_5.ngOnInit();
     }
     _compView_0.detectChanges();
   }

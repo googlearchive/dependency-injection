@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -149,37 +147,34 @@ const List<dynamic> styles$CarComponentHost = const [];
 
 class _ViewCarComponentHost0 extends AppView<dynamic> {
   ViewCarComponent0 _compView_0;
-  import8.Engine _Engine_0_4;
-  import8.Tires _Tires_0_5;
-  import8.Car _Car_0_6;
-  import1.CarComponent _CarComponent_0_7;
+  import8.Engine _Engine_0_5;
+  import8.Tires _Tires_0_6;
+  import8.Car _Car_0_7;
+  import1.CarComponent _CarComponent_0_8;
   _ViewCarComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewCarComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _Engine_0_4 = new import8.Engine();
-    _Tires_0_5 = new import8.Tires();
-    _Car_0_6 = new import8.Car(_Engine_0_4, _Tires_0_5);
-    _CarComponent_0_7 = new import1.CarComponent(_Car_0_6);
-    _compView_0.create(_CarComponent_0_7, projectableNodes);
+    _Engine_0_5 = new import8.Engine();
+    _Tires_0_6 = new import8.Tires();
+    _Car_0_7 = new import8.Car(_Engine_0_5, _Tires_0_6);
+    _CarComponent_0_8 = new import1.CarComponent(_Car_0_7);
+    _compView_0.create(_CarComponent_0_8, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.CarComponent>(0, this, rootEl, _CarComponent_0_7);
+    return new ComponentRef<import1.CarComponent>(0, this, rootEl, _CarComponent_0_8);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import8.Engine) && (0 == nodeIndex))) {
-      return _Engine_0_4;
+      return _Engine_0_5;
     }
     if ((identical(token, import8.Tires) && (0 == nodeIndex))) {
-      return _Tires_0_5;
+      return _Tires_0_6;
     }
     if ((identical(token, import8.Car) && (0 == nodeIndex))) {
-      return _Car_0_6;
-    }
-    if ((identical(token, import1.CarComponent) && (0 == nodeIndex))) {
-      return _CarComponent_0_7;
+      return _Car_0_7;
     }
     return notFoundResult;
   }

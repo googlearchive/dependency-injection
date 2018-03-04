@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -31,8 +29,8 @@ import 'package:angular/src/core/linker/app_view_utils.dart' as import6;
 import 'package:angular/angular.dart';
 import 'logger_service.dart' as import8;
 import 'user_service.dart' as import9;
-import 'heroes/hero_service_provider.dart' as import10;
-import 'heroes/hero_service.dart' as import11;
+import 'heroes/hero_service.dart' as import10;
+import 'heroes/hero_service_provider.dart' as import11;
 import 'package:angular/src/core/di/opaque_token.dart' as import12;
 
 const List<dynamic> styles$Provider1Component = const [];
@@ -74,27 +72,24 @@ const List<dynamic> styles$Provider1ComponentHost = const [];
 
 class _ViewProvider1ComponentHost0 extends AppView<dynamic> {
   ViewProvider1Component0 _compView_0;
-  import8.Logger _Logger_0_4;
-  import1.Provider1Component _Provider1Component_0_5;
+  import8.Logger _Logger_0_5;
+  import1.Provider1Component _Provider1Component_0_6;
   _ViewProvider1ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider1Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _Logger_0_4 = new import8.Logger();
-    _Provider1Component_0_5 = new import1.Provider1Component(_Logger_0_4);
-    _compView_0.create(_Provider1Component_0_5, projectableNodes);
+    _Logger_0_5 = new import8.Logger();
+    _Provider1Component_0_6 = new import1.Provider1Component(_Logger_0_5);
+    _compView_0.create(_Provider1Component_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider1Component>(0, this, rootEl, _Provider1Component_0_5);
+    return new ComponentRef<import1.Provider1Component>(0, this, rootEl, _Provider1Component_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import8.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_4;
-    }
-    if ((identical(token, import1.Provider1Component) && (0 == nodeIndex))) {
-      return _Provider1Component_0_5;
+      return _Logger_0_5;
     }
     return notFoundResult;
   }
@@ -154,27 +149,24 @@ const List<dynamic> styles$Provider3ComponentHost = const [];
 
 class _ViewProvider3ComponentHost0 extends AppView<dynamic> {
   ViewProvider3Component0 _compView_0;
-  import8.Logger _Logger_0_4;
-  import1.Provider3Component _Provider3Component_0_5;
+  import8.Logger _Logger_0_5;
+  import1.Provider3Component _Provider3Component_0_6;
   _ViewProvider3ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider3Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _Logger_0_4 = new import8.Logger();
-    _Provider3Component_0_5 = new import1.Provider3Component(_Logger_0_4);
-    _compView_0.create(_Provider3Component_0_5, projectableNodes);
+    _Logger_0_5 = new import8.Logger();
+    _Provider3Component_0_6 = new import1.Provider3Component(_Logger_0_5);
+    _compView_0.create(_Provider3Component_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider3Component>(0, this, rootEl, _Provider3Component_0_5);
+    return new ComponentRef<import1.Provider3Component>(0, this, rootEl, _Provider3Component_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import8.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_4;
-    }
-    if ((identical(token, import1.Provider3Component) && (0 == nodeIndex))) {
-      return _Provider3Component_0_5;
+      return _Logger_0_5;
     }
     return notFoundResult;
   }
@@ -234,27 +226,24 @@ const List<dynamic> styles$Provider4ComponentHost = const [];
 
 class _ViewProvider4ComponentHost0 extends AppView<dynamic> {
   ViewProvider4Component0 _compView_0;
-  import1.BetterLogger _Logger_0_4;
-  import1.Provider4Component _Provider4Component_0_5;
+  import1.BetterLogger _Logger_0_5;
+  import1.Provider4Component _Provider4Component_0_6;
   _ViewProvider4ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider4Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _Logger_0_4 = new import1.BetterLogger();
-    _Provider4Component_0_5 = new import1.Provider4Component(_Logger_0_4);
-    _compView_0.create(_Provider4Component_0_5, projectableNodes);
+    _Logger_0_5 = new import1.BetterLogger();
+    _Provider4Component_0_6 = new import1.Provider4Component(_Logger_0_5);
+    _compView_0.create(_Provider4Component_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider4Component>(0, this, rootEl, _Provider4Component_0_5);
+    return new ComponentRef<import1.Provider4Component>(0, this, rootEl, _Provider4Component_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import8.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_4;
-    }
-    if ((identical(token, import1.Provider4Component) && (0 == nodeIndex))) {
-      return _Provider4Component_0_5;
+      return _Logger_0_5;
     }
     return notFoundResult;
   }
@@ -314,32 +303,29 @@ const List<dynamic> styles$Provider5ComponentHost = const [];
 
 class _ViewProvider5ComponentHost0 extends AppView<dynamic> {
   ViewProvider5Component0 _compView_0;
-  import9.UserService _UserService_0_4;
-  import1.EvenBetterLogger _Logger_0_5;
-  import1.Provider5Component _Provider5Component_0_6;
+  import9.UserService _UserService_0_5;
+  import1.EvenBetterLogger _Logger_0_6;
+  import1.Provider5Component _Provider5Component_0_7;
   _ViewProvider5ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider5Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _UserService_0_4 = new import9.UserService();
-    _Logger_0_5 = new import1.EvenBetterLogger(_UserService_0_4);
-    _Provider5Component_0_6 = new import1.Provider5Component(_Logger_0_5);
-    _compView_0.create(_Provider5Component_0_6, projectableNodes);
+    _UserService_0_5 = new import9.UserService();
+    _Logger_0_6 = new import1.EvenBetterLogger(_UserService_0_5);
+    _Provider5Component_0_7 = new import1.Provider5Component(_Logger_0_6);
+    _compView_0.create(_Provider5Component_0_7, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider5Component>(0, this, rootEl, _Provider5Component_0_6);
+    return new ComponentRef<import1.Provider5Component>(0, this, rootEl, _Provider5Component_0_7);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import9.UserService) && (0 == nodeIndex))) {
-      return _UserService_0_4;
+      return _UserService_0_5;
     }
     if ((identical(token, import8.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_5;
-    }
-    if ((identical(token, import1.Provider5Component) && (0 == nodeIndex))) {
-      return _Provider5Component_0_6;
+      return _Logger_0_6;
     }
     return notFoundResult;
   }
@@ -399,32 +385,29 @@ const List<dynamic> styles$Provider6aComponentHost = const [];
 
 class _ViewProvider6aComponentHost0 extends AppView<dynamic> {
   ViewProvider6aComponent0 _compView_0;
-  import1.NewLogger _NewLogger_0_4;
-  import1.NewLogger _OldLogger_0_5;
-  import1.Provider6aComponent _Provider6aComponent_0_6;
+  import1.NewLogger _NewLogger_0_5;
+  import1.NewLogger _OldLogger_0_6;
+  import1.Provider6aComponent _Provider6aComponent_0_7;
   _ViewProvider6aComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider6aComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _NewLogger_0_4 = new import1.NewLogger();
-    _OldLogger_0_5 = new import1.NewLogger();
-    _Provider6aComponent_0_6 = new import1.Provider6aComponent(_NewLogger_0_4, _OldLogger_0_5);
-    _compView_0.create(_Provider6aComponent_0_6, projectableNodes);
+    _NewLogger_0_5 = new import1.NewLogger();
+    _OldLogger_0_6 = new import1.NewLogger();
+    _Provider6aComponent_0_7 = new import1.Provider6aComponent(_NewLogger_0_5, _OldLogger_0_6);
+    _compView_0.create(_Provider6aComponent_0_7, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider6aComponent>(0, this, rootEl, _Provider6aComponent_0_6);
+    return new ComponentRef<import1.Provider6aComponent>(0, this, rootEl, _Provider6aComponent_0_7);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import1.NewLogger) && (0 == nodeIndex))) {
-      return _NewLogger_0_4;
+      return _NewLogger_0_5;
     }
     if ((identical(token, import1.OldLogger) && (0 == nodeIndex))) {
-      return _OldLogger_0_5;
-    }
-    if ((identical(token, import1.Provider6aComponent) && (0 == nodeIndex))) {
-      return _Provider6aComponent_0_6;
+      return _OldLogger_0_6;
     }
     return notFoundResult;
   }
@@ -484,32 +467,29 @@ const List<dynamic> styles$Provider6bComponentHost = const [];
 
 class _ViewProvider6bComponentHost0 extends AppView<dynamic> {
   ViewProvider6bComponent0 _compView_0;
-  import1.NewLogger _NewLogger_0_4;
-  dynamic _OldLogger_0_5;
-  import1.Provider6bComponent _Provider6bComponent_0_6;
+  import1.NewLogger _NewLogger_0_5;
+  import1.NewLogger _OldLogger_0_6;
+  import1.Provider6bComponent _Provider6bComponent_0_7;
   _ViewProvider6bComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider6bComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _NewLogger_0_4 = new import1.NewLogger();
-    _OldLogger_0_5 = _NewLogger_0_4;
-    _Provider6bComponent_0_6 = new import1.Provider6bComponent(_NewLogger_0_4, _OldLogger_0_5);
-    _compView_0.create(_Provider6bComponent_0_6, projectableNodes);
+    _NewLogger_0_5 = new import1.NewLogger();
+    _OldLogger_0_6 = _NewLogger_0_5;
+    _Provider6bComponent_0_7 = new import1.Provider6bComponent(_NewLogger_0_5, _OldLogger_0_6);
+    _compView_0.create(_Provider6bComponent_0_7, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider6bComponent>(0, this, rootEl, _Provider6bComponent_0_6);
+    return new ComponentRef<import1.Provider6bComponent>(0, this, rootEl, _Provider6bComponent_0_7);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import1.NewLogger) && (0 == nodeIndex))) {
-      return _NewLogger_0_4;
+      return _NewLogger_0_5;
     }
     if ((identical(token, import1.OldLogger) && (0 == nodeIndex))) {
-      return _OldLogger_0_5;
-    }
-    if ((identical(token, import1.Provider6bComponent) && (0 == nodeIndex))) {
-      return _Provider6bComponent_0_6;
+      return _OldLogger_0_6;
     }
     return notFoundResult;
   }
@@ -569,27 +549,24 @@ const List<dynamic> styles$Provider7ComponentHost = const [];
 
 class _ViewProvider7ComponentHost0 extends AppView<dynamic> {
   ViewProvider7Component0 _compView_0;
-  import1.SilentLogger _Logger_0_4;
-  import1.Provider7Component _Provider7Component_0_5;
+  import1.SilentLogger _Logger_0_5;
+  import1.Provider7Component _Provider7Component_0_6;
   _ViewProvider7ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider7Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _Logger_0_4 = const import1.SilentLogger();
-    _Provider7Component_0_5 = new import1.Provider7Component(_Logger_0_4);
-    _compView_0.create(_Provider7Component_0_5, projectableNodes);
+    _Logger_0_5 = const import1.SilentLogger();
+    _Provider7Component_0_6 = new import1.Provider7Component(_Logger_0_5);
+    _compView_0.create(_Provider7Component_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider7Component>(0, this, rootEl, _Provider7Component_0_5);
+    return new ComponentRef<import1.Provider7Component>(0, this, rootEl, _Provider7Component_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import8.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_4;
-    }
-    if ((identical(token, import1.Provider7Component) && (0 == nodeIndex))) {
-      return _Provider7Component_0_5;
+      return _Logger_0_5;
     }
     return notFoundResult;
   }
@@ -649,37 +626,34 @@ const List<dynamic> styles$Provider8ComponentHost = const [];
 
 class _ViewProvider8ComponentHost0 extends AppView<dynamic> {
   ViewProvider8Component0 _compView_0;
-  import8.Logger _Logger_0_4;
-  import9.UserService _UserService_0_5;
-  dynamic _HeroService_0_6;
-  import1.Provider8Component _Provider8Component_0_7;
+  import8.Logger _Logger_0_5;
+  import9.UserService _UserService_0_6;
+  import10.HeroService _HeroService_0_7;
+  import1.Provider8Component _Provider8Component_0_8;
   _ViewProvider8ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider8Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _Logger_0_4 = new import8.Logger();
-    _UserService_0_5 = new import9.UserService();
-    _HeroService_0_6 = import10.heroServiceFactory(_Logger_0_4, _UserService_0_5);
-    _Provider8Component_0_7 = new import1.Provider8Component(_HeroService_0_6);
-    _compView_0.create(_Provider8Component_0_7, projectableNodes);
+    _Logger_0_5 = new import8.Logger();
+    _UserService_0_6 = new import9.UserService();
+    _HeroService_0_7 = import11.heroServiceFactory(_Logger_0_5, _UserService_0_6);
+    _Provider8Component_0_8 = new import1.Provider8Component(_HeroService_0_7);
+    _compView_0.create(_Provider8Component_0_8, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider8Component>(0, this, rootEl, _Provider8Component_0_7);
+    return new ComponentRef<import1.Provider8Component>(0, this, rootEl, _Provider8Component_0_8);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import8.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_4;
+      return _Logger_0_5;
     }
     if ((identical(token, import9.UserService) && (0 == nodeIndex))) {
-      return _UserService_0_5;
+      return _UserService_0_6;
     }
-    if ((identical(token, import11.HeroService) && (0 == nodeIndex))) {
-      return _HeroService_0_6;
-    }
-    if ((identical(token, import1.Provider8Component) && (0 == nodeIndex))) {
-      return _Provider8Component_0_7;
+    if ((identical(token, import10.HeroService) && (0 == nodeIndex))) {
+      return _HeroService_0_7;
     }
     return notFoundResult;
   }
@@ -739,27 +713,24 @@ const List<dynamic> styles$Provider9ComponentHost = const [];
 
 class _ViewProvider9ComponentHost0 extends AppView<dynamic> {
   ViewProvider9Component0 _compView_0;
-  Map<String, dynamic> _app_config_0_4;
-  import1.Provider9Component _Provider9Component_0_5;
+  Map<String, dynamic> _app_config_0_5;
+  import1.Provider9Component _Provider9Component_0_6;
   _ViewProvider9ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider9Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _app_config_0_4 = const {'apiEndpoint': 'api.heroes.com', 'title': 'Dependency Injection'};
-    _Provider9Component_0_5 = new import1.Provider9Component(_app_config_0_4);
-    _compView_0.create(_Provider9Component_0_5, projectableNodes);
+    _app_config_0_5 = const {'apiEndpoint': 'api.heroes.com', 'title': 'Dependency Injection'};
+    _Provider9Component_0_6 = new import1.Provider9Component(_app_config_0_5);
+    _compView_0.create(_Provider9Component_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider9Component>(0, this, rootEl, _Provider9Component_0_5);
+    return new ComponentRef<import1.Provider9Component>(0, this, rootEl, _Provider9Component_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, const import12.OpaqueToken('app.config')) && (0 == nodeIndex))) {
-      return _app_config_0_4;
-    }
-    if ((identical(token, import1.Provider9Component) && (0 == nodeIndex))) {
-      return _Provider9Component_0_5;
+      return _app_config_0_5;
     }
     return notFoundResult;
   }
@@ -768,7 +739,7 @@ class _ViewProvider9ComponentHost0 extends AppView<dynamic> {
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _Provider9Component_0_5.ngOnInit();
+      _Provider9Component_0_6.ngOnInit();
     }
     _compView_0.detectChanges();
   }
@@ -823,27 +794,24 @@ const List<dynamic> styles$Provider10ComponentHost = const [];
 
 class _ViewProvider10ComponentHost0 extends AppView<dynamic> {
   ViewProvider10Component0 _compView_0;
-  dynamic _Logger_0_4;
-  import1.Provider10Component _Provider10Component_0_5;
+  dynamic _Logger_0_5;
+  import1.Provider10Component _Provider10Component_0_6;
   _ViewProvider10ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider10Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _Logger_0_4 = null;
-    _Provider10Component_0_5 = new import1.Provider10Component(_Logger_0_4);
-    _compView_0.create(_Provider10Component_0_5, projectableNodes);
+    _Logger_0_5 = null;
+    _Provider10Component_0_6 = new import1.Provider10Component(_Logger_0_5);
+    _compView_0.create(_Provider10Component_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.Provider10Component>(0, this, rootEl, _Provider10Component_0_5);
+    return new ComponentRef<import1.Provider10Component>(0, this, rootEl, _Provider10Component_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import8.Logger) && (0 == nodeIndex))) {
-      return _Logger_0_4;
-    }
-    if ((identical(token, import1.Provider10Component) && (0 == nodeIndex))) {
-      return _Provider10Component_0_5;
+      return _Logger_0_5;
     }
     return notFoundResult;
   }
@@ -852,7 +820,7 @@ class _ViewProvider10ComponentHost0 extends AppView<dynamic> {
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _Provider10Component_0_5.ngOnInit();
+      _Provider10Component_0_6.ngOnInit();
     }
     _compView_0.detectChanges();
   }
@@ -875,58 +843,58 @@ class ViewProvidersComponent0 extends AppView<import1.ProvidersComponent> {
   import2.DivElement _el_2;
   import2.Element _el_3;
   ViewProvider1Component0 _compView_3;
-  import8.Logger _Logger_3_4;
-  import1.Provider1Component _Provider1Component_3_5;
+  import8.Logger _Logger_3_5;
+  import1.Provider1Component _Provider1Component_3_6;
   import2.DivElement _el_4;
   import2.Element _el_5;
   ViewProvider3Component0 _compView_5;
-  import8.Logger _Logger_5_4;
-  import1.Provider3Component _Provider3Component_5_5;
+  import8.Logger _Logger_5_5;
+  import1.Provider3Component _Provider3Component_5_6;
   import2.DivElement _el_6;
   import2.Element _el_7;
   ViewProvider4Component0 _compView_7;
-  import1.BetterLogger _Logger_7_4;
-  import1.Provider4Component _Provider4Component_7_5;
+  import1.BetterLogger _Logger_7_5;
+  import1.Provider4Component _Provider4Component_7_6;
   import2.DivElement _el_8;
   import2.Element _el_9;
   ViewProvider5Component0 _compView_9;
-  import9.UserService _UserService_9_4;
-  import1.EvenBetterLogger _Logger_9_5;
-  import1.Provider5Component _Provider5Component_9_6;
+  import9.UserService _UserService_9_5;
+  import1.EvenBetterLogger _Logger_9_6;
+  import1.Provider5Component _Provider5Component_9_7;
   import2.DivElement _el_10;
   import2.Element _el_11;
   ViewProvider6aComponent0 _compView_11;
-  import1.NewLogger _NewLogger_11_4;
-  import1.NewLogger _OldLogger_11_5;
-  import1.Provider6aComponent _Provider6aComponent_11_6;
+  import1.NewLogger _NewLogger_11_5;
+  import1.NewLogger _OldLogger_11_6;
+  import1.Provider6aComponent _Provider6aComponent_11_7;
   import2.DivElement _el_12;
   import2.Element _el_13;
   ViewProvider6bComponent0 _compView_13;
-  import1.NewLogger _NewLogger_13_4;
-  dynamic _OldLogger_13_5;
-  import1.Provider6bComponent _Provider6bComponent_13_6;
+  import1.NewLogger _NewLogger_13_5;
+  import1.NewLogger _OldLogger_13_6;
+  import1.Provider6bComponent _Provider6bComponent_13_7;
   import2.DivElement _el_14;
   import2.Element _el_15;
   ViewProvider7Component0 _compView_15;
-  import1.SilentLogger _Logger_15_4;
-  import1.Provider7Component _Provider7Component_15_5;
+  import1.SilentLogger _Logger_15_5;
+  import1.Provider7Component _Provider7Component_15_6;
   import2.DivElement _el_16;
   import2.Element _el_17;
   ViewProvider8Component0 _compView_17;
-  import8.Logger _Logger_17_4;
-  import9.UserService _UserService_17_5;
-  dynamic _HeroService_17_6;
-  import1.Provider8Component _Provider8Component_17_7;
+  import8.Logger _Logger_17_5;
+  import9.UserService _UserService_17_6;
+  import10.HeroService _HeroService_17_7;
+  import1.Provider8Component _Provider8Component_17_8;
   import2.DivElement _el_18;
   import2.Element _el_19;
   ViewProvider9Component0 _compView_19;
-  Map<String, dynamic> _app_config_19_4;
-  import1.Provider9Component _Provider9Component_19_5;
+  Map<String, dynamic> _app_config_19_5;
+  import1.Provider9Component _Provider9Component_19_6;
   import2.DivElement _el_20;
   import2.Element _el_21;
   ViewProvider10Component0 _compView_21;
-  dynamic _Logger_21_4;
-  import1.Provider10Component _Provider10Component_21_5;
+  dynamic _Logger_21_5;
+  import1.Provider10Component _Provider10Component_21_6;
   static RenderComponentType _renderType;
   ViewProvidersComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-providers');
@@ -945,86 +913,86 @@ class ViewProvidersComponent0 extends AppView<import1.ProvidersComponent> {
     _compView_3 = new ViewProvider1Component0(this, 3);
     _el_3 = _compView_3.rootEl;
     _el_2.append(_el_3);
-    _Logger_3_4 = new import8.Logger();
-    _Provider1Component_3_5 = new import1.Provider1Component(_Logger_3_4);
-    _compView_3.create(_Provider1Component_3_5, []);
+    _Logger_3_5 = new import8.Logger();
+    _Provider1Component_3_6 = new import1.Provider1Component(_Logger_3_5);
+    _compView_3.create(_Provider1Component_3_6, []);
     _el_4 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_4, 'id', 'p3');
     _compView_5 = new ViewProvider3Component0(this, 5);
     _el_5 = _compView_5.rootEl;
     _el_4.append(_el_5);
-    _Logger_5_4 = new import8.Logger();
-    _Provider3Component_5_5 = new import1.Provider3Component(_Logger_5_4);
-    _compView_5.create(_Provider3Component_5_5, []);
+    _Logger_5_5 = new import8.Logger();
+    _Provider3Component_5_6 = new import1.Provider3Component(_Logger_5_5);
+    _compView_5.create(_Provider3Component_5_6, []);
     _el_6 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_6, 'id', 'p4');
     _compView_7 = new ViewProvider4Component0(this, 7);
     _el_7 = _compView_7.rootEl;
     _el_6.append(_el_7);
-    _Logger_7_4 = new import1.BetterLogger();
-    _Provider4Component_7_5 = new import1.Provider4Component(_Logger_7_4);
-    _compView_7.create(_Provider4Component_7_5, []);
+    _Logger_7_5 = new import1.BetterLogger();
+    _Provider4Component_7_6 = new import1.Provider4Component(_Logger_7_5);
+    _compView_7.create(_Provider4Component_7_6, []);
     _el_8 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_8, 'id', 'p5');
     _compView_9 = new ViewProvider5Component0(this, 9);
     _el_9 = _compView_9.rootEl;
     _el_8.append(_el_9);
-    _UserService_9_4 = new import9.UserService();
-    _Logger_9_5 = new import1.EvenBetterLogger(_UserService_9_4);
-    _Provider5Component_9_6 = new import1.Provider5Component(_Logger_9_5);
-    _compView_9.create(_Provider5Component_9_6, []);
+    _UserService_9_5 = new import9.UserService();
+    _Logger_9_6 = new import1.EvenBetterLogger(_UserService_9_5);
+    _Provider5Component_9_7 = new import1.Provider5Component(_Logger_9_6);
+    _compView_9.create(_Provider5Component_9_7, []);
     _el_10 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_10, 'id', 'p6a');
     _compView_11 = new ViewProvider6aComponent0(this, 11);
     _el_11 = _compView_11.rootEl;
     _el_10.append(_el_11);
-    _NewLogger_11_4 = new import1.NewLogger();
-    _OldLogger_11_5 = new import1.NewLogger();
-    _Provider6aComponent_11_6 = new import1.Provider6aComponent(_NewLogger_11_4, _OldLogger_11_5);
-    _compView_11.create(_Provider6aComponent_11_6, []);
+    _NewLogger_11_5 = new import1.NewLogger();
+    _OldLogger_11_6 = new import1.NewLogger();
+    _Provider6aComponent_11_7 = new import1.Provider6aComponent(_NewLogger_11_5, _OldLogger_11_6);
+    _compView_11.create(_Provider6aComponent_11_7, []);
     _el_12 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_12, 'id', 'p6b');
     _compView_13 = new ViewProvider6bComponent0(this, 13);
     _el_13 = _compView_13.rootEl;
     _el_12.append(_el_13);
-    _NewLogger_13_4 = new import1.NewLogger();
-    _OldLogger_13_5 = _NewLogger_13_4;
-    _Provider6bComponent_13_6 = new import1.Provider6bComponent(_NewLogger_13_4, _OldLogger_13_5);
-    _compView_13.create(_Provider6bComponent_13_6, []);
+    _NewLogger_13_5 = new import1.NewLogger();
+    _OldLogger_13_6 = _NewLogger_13_5;
+    _Provider6bComponent_13_7 = new import1.Provider6bComponent(_NewLogger_13_5, _OldLogger_13_6);
+    _compView_13.create(_Provider6bComponent_13_7, []);
     _el_14 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_14, 'id', 'p7');
     _compView_15 = new ViewProvider7Component0(this, 15);
     _el_15 = _compView_15.rootEl;
     _el_14.append(_el_15);
-    _Logger_15_4 = const import1.SilentLogger();
-    _Provider7Component_15_5 = new import1.Provider7Component(_Logger_15_4);
-    _compView_15.create(_Provider7Component_15_5, []);
+    _Logger_15_5 = const import1.SilentLogger();
+    _Provider7Component_15_6 = new import1.Provider7Component(_Logger_15_5);
+    _compView_15.create(_Provider7Component_15_6, []);
     _el_16 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_16, 'id', 'p8');
     _compView_17 = new ViewProvider8Component0(this, 17);
     _el_17 = _compView_17.rootEl;
     _el_16.append(_el_17);
-    _Logger_17_4 = new import8.Logger();
-    _UserService_17_5 = new import9.UserService();
-    _HeroService_17_6 = import10.heroServiceFactory(_Logger_17_4, _UserService_17_5);
-    _Provider8Component_17_7 = new import1.Provider8Component(_HeroService_17_6);
-    _compView_17.create(_Provider8Component_17_7, []);
+    _Logger_17_5 = new import8.Logger();
+    _UserService_17_6 = new import9.UserService();
+    _HeroService_17_7 = import11.heroServiceFactory(_Logger_17_5, _UserService_17_6);
+    _Provider8Component_17_8 = new import1.Provider8Component(_HeroService_17_7);
+    _compView_17.create(_Provider8Component_17_8, []);
     _el_18 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_18, 'id', 'p9');
     _compView_19 = new ViewProvider9Component0(this, 19);
     _el_19 = _compView_19.rootEl;
     _el_18.append(_el_19);
-    _app_config_19_4 = const {'apiEndpoint': 'api.heroes.com', 'title': 'Dependency Injection'};
-    _Provider9Component_19_5 = new import1.Provider9Component(_app_config_19_4);
-    _compView_19.create(_Provider9Component_19_5, []);
+    _app_config_19_5 = const {'apiEndpoint': 'api.heroes.com', 'title': 'Dependency Injection'};
+    _Provider9Component_19_6 = new import1.Provider9Component(_app_config_19_5);
+    _compView_19.create(_Provider9Component_19_6, []);
     _el_20 = createDivAndAppend(doc, parentRenderNode);
     createAttr(_el_20, 'id', 'p10');
     _compView_21 = new ViewProvider10Component0(this, 21);
     _el_21 = _compView_21.rootEl;
     _el_20.append(_el_21);
-    _Logger_21_4 = null;
-    _Provider10Component_21_5 = new import1.Provider10Component(_Logger_21_4);
-    _compView_21.create(_Provider10Component_21_5, []);
+    _Logger_21_5 = null;
+    _Provider10Component_21_6 = new import1.Provider10Component(_Logger_21_5);
+    _compView_21.create(_Provider10Component_21_6, []);
     init(const [], null);
     return null;
   }
@@ -1032,79 +1000,49 @@ class ViewProvidersComponent0 extends AppView<import1.ProvidersComponent> {
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import8.Logger) && (3 == nodeIndex))) {
-      return _Logger_3_4;
-    }
-    if ((identical(token, import1.Provider1Component) && (3 == nodeIndex))) {
-      return _Provider1Component_3_5;
+      return _Logger_3_5;
     }
     if ((identical(token, import8.Logger) && (5 == nodeIndex))) {
-      return _Logger_5_4;
-    }
-    if ((identical(token, import1.Provider3Component) && (5 == nodeIndex))) {
-      return _Provider3Component_5_5;
+      return _Logger_5_5;
     }
     if ((identical(token, import8.Logger) && (7 == nodeIndex))) {
-      return _Logger_7_4;
-    }
-    if ((identical(token, import1.Provider4Component) && (7 == nodeIndex))) {
-      return _Provider4Component_7_5;
+      return _Logger_7_5;
     }
     if ((identical(token, import9.UserService) && (9 == nodeIndex))) {
-      return _UserService_9_4;
+      return _UserService_9_5;
     }
     if ((identical(token, import8.Logger) && (9 == nodeIndex))) {
-      return _Logger_9_5;
-    }
-    if ((identical(token, import1.Provider5Component) && (9 == nodeIndex))) {
-      return _Provider5Component_9_6;
+      return _Logger_9_6;
     }
     if ((identical(token, import1.NewLogger) && (11 == nodeIndex))) {
-      return _NewLogger_11_4;
+      return _NewLogger_11_5;
     }
     if ((identical(token, import1.OldLogger) && (11 == nodeIndex))) {
-      return _OldLogger_11_5;
-    }
-    if ((identical(token, import1.Provider6aComponent) && (11 == nodeIndex))) {
-      return _Provider6aComponent_11_6;
+      return _OldLogger_11_6;
     }
     if ((identical(token, import1.NewLogger) && (13 == nodeIndex))) {
-      return _NewLogger_13_4;
+      return _NewLogger_13_5;
     }
     if ((identical(token, import1.OldLogger) && (13 == nodeIndex))) {
-      return _OldLogger_13_5;
-    }
-    if ((identical(token, import1.Provider6bComponent) && (13 == nodeIndex))) {
-      return _Provider6bComponent_13_6;
+      return _OldLogger_13_6;
     }
     if ((identical(token, import8.Logger) && (15 == nodeIndex))) {
-      return _Logger_15_4;
-    }
-    if ((identical(token, import1.Provider7Component) && (15 == nodeIndex))) {
-      return _Provider7Component_15_5;
+      return _Logger_15_5;
     }
     if ((identical(token, import8.Logger) && (17 == nodeIndex))) {
-      return _Logger_17_4;
+      return _Logger_17_5;
     }
     if ((identical(token, import9.UserService) && (17 == nodeIndex))) {
-      return _UserService_17_5;
+      return _UserService_17_6;
     }
-    if ((identical(token, import11.HeroService) && (17 == nodeIndex))) {
-      return _HeroService_17_6;
-    }
-    if ((identical(token, import1.Provider8Component) && (17 == nodeIndex))) {
-      return _Provider8Component_17_7;
+    if ((identical(token, import10.HeroService) && (17 == nodeIndex))) {
+      return _HeroService_17_7;
     }
     if ((identical(token, const import12.OpaqueToken('app.config')) && (19 == nodeIndex))) {
-      return _app_config_19_4;
-    }
-    if ((identical(token, import1.Provider9Component) && (19 == nodeIndex))) {
-      return _Provider9Component_19_5;
+      return _app_config_19_5;
     }
     if ((identical(token, import8.Logger) && (21 == nodeIndex))) {
-      return _Logger_21_4;
-    }
-    if ((identical(token, import1.Provider10Component) && (21 == nodeIndex))) {
-      return _Provider10Component_21_5;
+      return _Logger_21_5;
     }
     return notFoundResult;
   }
@@ -1113,10 +1051,10 @@ class ViewProvidersComponent0 extends AppView<import1.ProvidersComponent> {
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _Provider9Component_19_5.ngOnInit();
+      _Provider9Component_19_6.ngOnInit();
     }
     if (firstCheck) {
-      _Provider10Component_21_5.ngOnInit();
+      _Provider10Component_21_6.ngOnInit();
     }
     _compView_3.detectChanges();
     _compView_5.detectChanges();
@@ -1153,24 +1091,16 @@ const List<dynamic> styles$ProvidersComponentHost = const [];
 
 class _ViewProvidersComponentHost0 extends AppView<dynamic> {
   ViewProvidersComponent0 _compView_0;
-  import1.ProvidersComponent _ProvidersComponent_0_4;
+  import1.ProvidersComponent _ProvidersComponent_0_5;
   _ViewProvidersComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvidersComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _ProvidersComponent_0_4 = new import1.ProvidersComponent();
-    _compView_0.create(_ProvidersComponent_0_4, projectableNodes);
+    _ProvidersComponent_0_5 = new import1.ProvidersComponent();
+    _compView_0.create(_ProvidersComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.ProvidersComponent>(0, this, rootEl, _ProvidersComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.ProvidersComponent) && (0 == nodeIndex))) {
-      return _ProvidersComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.ProvidersComponent>(0, this, rootEl, _ProvidersComponent_0_5);
   }
 
   @override

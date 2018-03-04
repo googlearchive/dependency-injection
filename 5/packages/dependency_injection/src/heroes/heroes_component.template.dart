@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -35,7 +33,7 @@ class ViewHeroesComponent0 extends AppView<import1.HeroesComponent> {
   import2.Element _el_0;
   import2.Element _el_2;
   import3.ViewHeroListComponent0 _compView_2;
-  import4.HeroListComponent _HeroListComponent_2_4;
+  import4.HeroListComponent _HeroListComponent_2_5;
   static RenderComponentType _renderType;
   ViewHeroesComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-heroes');
@@ -52,18 +50,10 @@ class ViewHeroesComponent0 extends AppView<import1.HeroesComponent> {
     _compView_2 = new import3.ViewHeroListComponent0(this, 2);
     _el_2 = _compView_2.rootEl;
     parentRenderNode.append(_el_2);
-    _HeroListComponent_2_4 = new import4.HeroListComponent(parentView.injectorGet(import10.HeroService, viewData.parentIndex));
-    _compView_2.create(_HeroListComponent_2_4, []);
+    _HeroListComponent_2_5 = new import4.HeroListComponent(parentView.injectorGet(import10.HeroService, viewData.parentIndex));
+    _compView_2.create(_HeroListComponent_2_5, []);
     init(const [], null);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import4.HeroListComponent) && (2 == nodeIndex))) {
-      return _HeroListComponent_2_4;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -85,33 +75,30 @@ const List<dynamic> styles$HeroesComponentHost = const [];
 
 class _ViewHeroesComponentHost0 extends AppView<dynamic> {
   ViewHeroesComponent0 _compView_0;
-  import1.HeroesComponent _HeroesComponent_0_4;
-  dynamic __HeroService_0_5;
+  import1.HeroesComponent _HeroesComponent_0_5;
+  import10.HeroService __HeroService_0_6;
   _ViewHeroesComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  dynamic get _HeroService_0_5 {
-    if ((this.__HeroService_0_5 == null)) {
-      (__HeroService_0_5 = import11.heroServiceFactory(this.injectorGet(import12.Logger, this.viewData.parentIndex), this.injectorGet(import13.UserService, this.viewData.parentIndex)));
+  import10.HeroService get _HeroService_0_6 {
+    if ((this.__HeroService_0_6 == null)) {
+      (__HeroService_0_6 = import11.heroServiceFactory(this.injectorGet(import12.Logger, this.viewData.parentIndex), this.injectorGet(import13.UserService, this.viewData.parentIndex)));
     }
-    return this.__HeroService_0_5;
+    return this.__HeroService_0_6;
   }
 
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroesComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _HeroesComponent_0_4 = new import1.HeroesComponent();
-    _compView_0.create(_HeroesComponent_0_4, projectableNodes);
+    _HeroesComponent_0_5 = new import1.HeroesComponent();
+    _compView_0.create(_HeroesComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.HeroesComponent>(0, this, rootEl, _HeroesComponent_0_4);
+    return new ComponentRef<import1.HeroesComponent>(0, this, rootEl, _HeroesComponent_0_5);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.HeroesComponent) && (0 == nodeIndex))) {
-      return _HeroesComponent_0_4;
-    }
     if ((identical(token, import10.HeroService) && (0 == nodeIndex))) {
-      return _HeroService_0_5;
+      return _HeroService_0_6;
     }
     return notFoundResult;
   }

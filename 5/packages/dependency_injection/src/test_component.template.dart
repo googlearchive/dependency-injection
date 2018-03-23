@@ -33,14 +33,15 @@ class ViewTestComponent0 extends AppView<import1.TestComponent> {
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewTestComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewTestComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-tests');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$TestComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.TestComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h2', parentRenderNode);
     import2.Text _text_1 = new import2.Text('Tests');
@@ -75,7 +76,7 @@ class ViewTestComponent0 extends AppView<import1.TestComponent> {
   }
 }
 
-AppView<import1.TestComponent> viewFactory_TestComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.TestComponent> viewFactory_TestComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewTestComponent0(parentView, parentIndex);
 }
 
@@ -84,7 +85,7 @@ const List<dynamic> styles$TestComponentHost = const [];
 class _ViewTestComponentHost0 extends AppView<dynamic> {
   ViewTestComponent0 _compView_0;
   import1.TestComponent _TestComponent_0_5;
-  _ViewTestComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewTestComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewTestComponent0(this, 0);
@@ -106,7 +107,7 @@ class _ViewTestComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_TestComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_TestComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewTestComponentHost0(parentView, parentIndex);
 }
 

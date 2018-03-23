@@ -46,14 +46,15 @@ class ViewInjectorComponent0 extends AppView<import1.InjectorComponent> {
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewInjectorComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewInjectorComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-injectors');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$InjectorComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.InjectorComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h2', parentRenderNode);
     import2.Text _text_1 = new import2.Text('Other Injections');
@@ -95,7 +96,7 @@ class ViewInjectorComponent0 extends AppView<import1.InjectorComponent> {
   }
 }
 
-AppView<import1.InjectorComponent> viewFactory_InjectorComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.InjectorComponent> viewFactory_InjectorComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewInjectorComponent0(parentView, parentIndex);
 }
 
@@ -109,7 +110,7 @@ class _ViewInjectorComponentHost0 extends AppView<dynamic> {
   import8.Car __Car_0_8;
   import9.Logger __Logger_0_9;
   import10.HeroService __HeroService_0_10;
-  _ViewInjectorComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewInjectorComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   import8.Engine get _Engine_0_6 {
     if ((this.__Engine_0_6 == null)) {
       (__Engine_0_6 = new import8.Engine());
@@ -190,7 +191,7 @@ class _ViewInjectorComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_InjectorComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_InjectorComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewInjectorComponentHost0(parentView, parentIndex);
 }
 

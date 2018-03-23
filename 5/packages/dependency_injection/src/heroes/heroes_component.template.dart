@@ -35,14 +35,15 @@ class ViewHeroesComponent0 extends AppView<import1.HeroesComponent> {
   import3.ViewHeroListComponent0 _compView_2;
   import4.HeroListComponent _HeroListComponent_2_5;
   static RenderComponentType _renderType;
-  ViewHeroesComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroesComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-heroes');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$HeroesComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.HeroesComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h2', parentRenderNode);
     import2.Text _text_1 = new import2.Text('Heroes');
@@ -67,7 +68,7 @@ class ViewHeroesComponent0 extends AppView<import1.HeroesComponent> {
   }
 }
 
-AppView<import1.HeroesComponent> viewFactory_HeroesComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.HeroesComponent> viewFactory_HeroesComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewHeroesComponent0(parentView, parentIndex);
 }
 
@@ -77,7 +78,7 @@ class _ViewHeroesComponentHost0 extends AppView<dynamic> {
   ViewHeroesComponent0 _compView_0;
   import1.HeroesComponent _HeroesComponent_0_5;
   import10.HeroService __HeroService_0_6;
-  _ViewHeroesComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroesComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   import10.HeroService get _HeroService_0_6 {
     if ((this.__HeroService_0_6 == null)) {
       (__HeroService_0_6 = import11.heroServiceFactory(this.injectorGet(import12.Logger, this.viewData.parentIndex), this.injectorGet(import13.UserService, this.viewData.parentIndex)));
@@ -114,7 +115,7 @@ class _ViewHeroesComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_HeroesComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_HeroesComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHeroesComponentHost0(parentView, parentIndex);
 }
 

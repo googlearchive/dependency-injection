@@ -86,9 +86,9 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import2.Element _el_13;
   import14.ViewProvidersComponent0 _compView_13;
   import15.ProvidersComponent _ProvidersComponent_13_5;
-  var _expr_1;
+  var _expr_0;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-app');
     _renderType ??= import19.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$AppComponent);
     setupComponentType(_renderType);
@@ -130,10 +130,11 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
 
   @override
   ComponentRef<import1.AppComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h1', parentRenderNode);
-    _text_1 = new import2.Text('');
+    _text_1 = new import2.Text((ctx.title ?? ''));
     _el_0.append(_text_1);
     _compView_2 = new import3.ViewCarComponent0(this, 2);
     _el_2 = _compView_2.rootEl;
@@ -223,13 +224,10 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _NgIf_12_9.ngIf = !_ctx.isAuthorized;
     _appEl_11.detectChangesInNestedViews();
     _appEl_12.detectChangesInNestedViews();
-    if (firstCheck) {
-      (_text_1.text = (_ctx.title ?? ''));
-    }
-    final currVal_1 = (_ctx.userInfo ?? '');
-    if (!identical(_expr_1, currVal_1)) {
-      _text_8.text = currVal_1;
-      _expr_1 = currVal_1;
+    final currVal_0 = (_ctx.userInfo ?? '');
+    if (!identical(_expr_0, currVal_0)) {
+      _text_8.text = currVal_0;
+      _expr_0 = currVal_0;
     }
     _compView_2.detectChanges();
     _compView_3.detectChanges();
@@ -248,7 +246,7 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   }
 }
 
-AppView<import1.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewAppComponent0(parentView, parentIndex);
 }
 
@@ -257,7 +255,7 @@ class _ViewAppComponent1 extends AppView<import1.AppComponent> {
   import24.ViewHeroesComponent0 _compView_0;
   import25.HeroesComponent _HeroesComponent_0_5;
   import9.HeroService __HeroService_0_6;
-  _ViewAppComponent1(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   import9.HeroService get _HeroService_0_6 {
@@ -297,7 +295,7 @@ class _ViewAppComponent1 extends AppView<import1.AppComponent> {
   }
 }
 
-AppView<import1.AppComponent> viewFactory_AppComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.AppComponent> viewFactory_AppComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent1(parentView, parentIndex);
 }
 
@@ -306,7 +304,7 @@ class _ViewAppComponent2 extends AppView<import1.AppComponent> {
   import24.ViewHeroesComponent0 _compView_0;
   import25.HeroesComponent _HeroesComponent_0_5;
   import9.HeroService __HeroService_0_6;
-  _ViewAppComponent2(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   import9.HeroService get _HeroService_0_6 {
@@ -346,7 +344,7 @@ class _ViewAppComponent2 extends AppView<import1.AppComponent> {
   }
 }
 
-AppView<import1.AppComponent> viewFactory_AppComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.AppComponent> viewFactory_AppComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent2(parentView, parentIndex);
 }
 
@@ -358,7 +356,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   import22.UserService _UserService_0_6;
   import1.AppComponent _AppComponent_0_7;
   import8.Logger __Logger_0_8;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import17.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   import8.Logger get _Logger_0_8 {
     if ((this.__Logger_0_8 == null)) {
       (__Logger_0_8 = new import8.Logger());
@@ -403,7 +401,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponentHost0(parentView, parentIndex);
 }
 

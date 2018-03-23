@@ -54,14 +54,15 @@ class ViewCarComponent0 extends AppView<import1.CarComponent> {
   var _expr_5;
   var _expr_6;
   static RenderComponentType _renderType;
-  ViewCarComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewCarComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-car');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$CarComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.CarComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h2', parentRenderNode);
     import2.Text _text_1 = new import2.Text('Cars');
@@ -139,7 +140,7 @@ class ViewCarComponent0 extends AppView<import1.CarComponent> {
   }
 }
 
-AppView<import1.CarComponent> viewFactory_CarComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.CarComponent> viewFactory_CarComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewCarComponent0(parentView, parentIndex);
 }
 
@@ -151,7 +152,7 @@ class _ViewCarComponentHost0 extends AppView<dynamic> {
   import8.Tires _Tires_0_6;
   import8.Car _Car_0_7;
   import1.CarComponent _CarComponent_0_8;
-  _ViewCarComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewCarComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewCarComponent0(this, 0);
@@ -190,7 +191,7 @@ class _ViewCarComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_CarComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_CarComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewCarComponentHost0(parentView, parentIndex);
 }
 

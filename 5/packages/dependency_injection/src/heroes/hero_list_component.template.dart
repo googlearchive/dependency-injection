@@ -32,7 +32,7 @@ class ViewHeroListComponent0 extends AppView<import1.HeroListComponent> {
   ViewContainer _appEl_0;
   import3.NgFor _NgFor_0_9;
   static RenderComponentType _renderType;
-  ViewHeroListComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroListComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import7.document.createElement('hero-list');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$HeroListComponent);
     setupComponentType(_renderType);
@@ -41,7 +41,7 @@ class ViewHeroListComponent0 extends AppView<import1.HeroListComponent> {
   ComponentRef<import1.HeroListComponent> build() {
     final _rootEl = rootEl;
     final import7.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_HeroListComponent1);
@@ -81,7 +81,7 @@ class _ViewHeroListComponent1 extends AppView<import1.HeroListComponent> {
   var _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewHeroListComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHeroListComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHeroListComponent0._renderType;
   }
   @override
@@ -134,7 +134,7 @@ const List<dynamic> styles$HeroListComponentHost = const [];
 class _ViewHeroListComponentHost0 extends AppView<dynamic> {
   ViewHeroListComponent0 _compView_0;
   import1.HeroListComponent _HeroListComponent_0_5;
-  _ViewHeroListComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroListComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroListComponent0(this, 0);

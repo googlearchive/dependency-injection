@@ -39,7 +39,7 @@ class ViewProvider1Component0 extends AppView<import1.Provider1Component> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider1Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider1Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-1');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider1Component);
     setupComponentType(_renderType);
@@ -75,7 +75,7 @@ class _ViewProvider1ComponentHost0 extends AppView<dynamic> {
   ViewProvider1Component0 _compView_0;
   import8.Logger _Logger_0_5;
   import1.Provider1Component _Provider1Component_0_6;
-  _ViewProvider1ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider1ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider1Component0(this, 0);
@@ -117,7 +117,7 @@ class ViewProvider3Component0 extends AppView<import1.Provider3Component> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider3Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider3Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-3');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider3Component);
     setupComponentType(_renderType);
@@ -153,7 +153,7 @@ class _ViewProvider3ComponentHost0 extends AppView<dynamic> {
   ViewProvider3Component0 _compView_0;
   import8.Logger _Logger_0_5;
   import1.Provider3Component _Provider3Component_0_6;
-  _ViewProvider3ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider3ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider3Component0(this, 0);
@@ -195,7 +195,7 @@ class ViewProvider4Component0 extends AppView<import1.Provider4Component> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider4Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider4Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-4');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider4Component);
     setupComponentType(_renderType);
@@ -231,7 +231,7 @@ class _ViewProvider4ComponentHost0 extends AppView<dynamic> {
   ViewProvider4Component0 _compView_0;
   import1.BetterLogger _Logger_0_5;
   import1.Provider4Component _Provider4Component_0_6;
-  _ViewProvider4ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider4ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider4Component0(this, 0);
@@ -273,7 +273,7 @@ class ViewProvider5Component0 extends AppView<import1.Provider5Component> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider5Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider5Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-5');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider5Component);
     setupComponentType(_renderType);
@@ -310,7 +310,7 @@ class _ViewProvider5ComponentHost0 extends AppView<dynamic> {
   import9.UserService _UserService_0_5;
   import1.EvenBetterLogger _Logger_0_6;
   import1.Provider5Component _Provider5Component_0_7;
-  _ViewProvider5ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider5ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider5Component0(this, 0);
@@ -356,7 +356,7 @@ class ViewProvider6aComponent0 extends AppView<import1.Provider6aComponent> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider6aComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider6aComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-6a');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider6aComponent);
     setupComponentType(_renderType);
@@ -393,7 +393,7 @@ class _ViewProvider6aComponentHost0 extends AppView<dynamic> {
   import1.NewLogger _NewLogger_0_5;
   import1.NewLogger _OldLogger_0_6;
   import1.Provider6aComponent _Provider6aComponent_0_7;
-  _ViewProvider6aComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider6aComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider6aComponent0(this, 0);
@@ -439,7 +439,7 @@ class ViewProvider6bComponent0 extends AppView<import1.Provider6bComponent> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider6bComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider6bComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-6b');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider6bComponent);
     setupComponentType(_renderType);
@@ -476,7 +476,7 @@ class _ViewProvider6bComponentHost0 extends AppView<dynamic> {
   import1.NewLogger _NewLogger_0_5;
   import1.NewLogger _OldLogger_0_6;
   import1.Provider6bComponent _Provider6bComponent_0_7;
-  _ViewProvider6bComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider6bComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider6bComponent0(this, 0);
@@ -522,7 +522,7 @@ class ViewProvider7Component0 extends AppView<import1.Provider7Component> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider7Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider7Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-7');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider7Component);
     setupComponentType(_renderType);
@@ -558,7 +558,7 @@ class _ViewProvider7ComponentHost0 extends AppView<dynamic> {
   ViewProvider7Component0 _compView_0;
   import1.SilentLogger _Logger_0_5;
   import1.Provider7Component _Provider7Component_0_6;
-  _ViewProvider7ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider7ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider7Component0(this, 0);
@@ -600,7 +600,7 @@ class ViewProvider8Component0 extends AppView<import1.Provider8Component> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider8Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider8Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-8');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider8Component);
     setupComponentType(_renderType);
@@ -638,7 +638,7 @@ class _ViewProvider8ComponentHost0 extends AppView<dynamic> {
   import9.UserService _UserService_0_6;
   import10.HeroService _HeroService_0_7;
   import1.Provider8Component _Provider8Component_0_8;
-  _ViewProvider8ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider8ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider8Component0(this, 0);
@@ -688,7 +688,7 @@ class ViewProvider9Component0 extends AppView<import1.Provider9Component> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider9Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider9Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-9');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider9Component);
     setupComponentType(_renderType);
@@ -724,7 +724,7 @@ class _ViewProvider9ComponentHost0 extends AppView<dynamic> {
   ViewProvider9Component0 _compView_0;
   Map<String, dynamic> _app_config_0_5;
   import1.Provider9Component _Provider9Component_0_6;
-  _ViewProvider9ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider9ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider9Component0(this, 0);
@@ -770,7 +770,7 @@ class ViewProvider10Component0 extends AppView<import1.Provider10Component> {
   import2.Text _text_0;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewProvider10Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvider10Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('provider-10');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$Provider10Component);
     setupComponentType(_renderType);
@@ -806,7 +806,7 @@ class _ViewProvider10ComponentHost0 extends AppView<dynamic> {
   ViewProvider10Component0 _compView_0;
   dynamic _Logger_0_5;
   import1.Provider10Component _Provider10Component_0_6;
-  _ViewProvider10ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvider10ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvider10Component0(this, 0);
@@ -906,7 +906,7 @@ class ViewProvidersComponent0 extends AppView<import1.ProvidersComponent> {
   dynamic _Logger_21_5;
   import1.Provider10Component _Provider10Component_21_6;
   static RenderComponentType _renderType;
-  ViewProvidersComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewProvidersComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-providers');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$ProvidersComponent);
     setupComponentType(_renderType);
@@ -1103,7 +1103,7 @@ const List<dynamic> styles$ProvidersComponentHost = const [];
 class _ViewProvidersComponentHost0 extends AppView<dynamic> {
   ViewProvidersComponent0 _compView_0;
   import1.ProvidersComponent _ProvidersComponent_0_5;
-  _ViewProvidersComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewProvidersComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewProvidersComponent0(this, 0);

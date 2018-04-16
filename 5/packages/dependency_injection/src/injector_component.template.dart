@@ -46,7 +46,7 @@ class ViewInjectorComponent0 extends AppView<import1.InjectorComponent> {
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewInjectorComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewInjectorComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-injectors');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$InjectorComponent);
     setupComponentType(_renderType);
@@ -110,7 +110,7 @@ class _ViewInjectorComponentHost0 extends AppView<dynamic> {
   import8.Car __Car_0_8;
   import9.Logger __Logger_0_9;
   import10.HeroService __HeroService_0_10;
-  _ViewInjectorComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewInjectorComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   import8.Engine get _Engine_0_6 {
     if ((this.__Engine_0_6 == null)) {
       (__Engine_0_6 = new import8.Engine());

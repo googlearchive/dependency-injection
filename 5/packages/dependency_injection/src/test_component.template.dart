@@ -33,7 +33,7 @@ class ViewTestComponent0 extends AppView<import1.TestComponent> {
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewTestComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewTestComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-tests');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$TestComponent);
     setupComponentType(_renderType);
@@ -85,7 +85,7 @@ const List<dynamic> styles$TestComponentHost = const [];
 class _ViewTestComponentHost0 extends AppView<dynamic> {
   ViewTestComponent0 _compView_0;
   import1.TestComponent _TestComponent_0_5;
-  _ViewTestComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewTestComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewTestComponent0(this, 0);

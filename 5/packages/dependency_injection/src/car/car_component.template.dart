@@ -54,7 +54,7 @@ class ViewCarComponent0 extends AppView<import1.CarComponent> {
   var _expr_5;
   var _expr_6;
   static RenderComponentType _renderType;
-  ViewCarComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewCarComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-car');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$CarComponent);
     setupComponentType(_renderType);
@@ -152,7 +152,7 @@ class _ViewCarComponentHost0 extends AppView<dynamic> {
   import8.Tires _Tires_0_6;
   import8.Car _Car_0_7;
   import1.CarComponent _CarComponent_0_8;
-  _ViewCarComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewCarComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewCarComponent0(this, 0);

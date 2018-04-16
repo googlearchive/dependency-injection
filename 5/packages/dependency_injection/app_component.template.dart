@@ -88,7 +88,7 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import15.ProvidersComponent _ProvidersComponent_13_5;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-app');
     _renderType ??= import19.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$AppComponent);
     setupComponentType(_renderType);
@@ -164,12 +164,12 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _el_9 = createAndAppend(doc, 'button', _el_7);
     import2.Text _text_10 = new import2.Text('Next User');
     _el_9.append(_text_10);
-    var _anchor_11 = ngAnchor.clone(false);
+    final _anchor_11 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_11);
     _appEl_11 = new ViewContainer(11, null, this, _anchor_11);
     TemplateRef _TemplateRef_11_8 = new TemplateRef(_appEl_11, viewFactory_AppComponent1);
     _NgIf_11_9 = new NgIf(_appEl_11, _TemplateRef_11_8);
-    var _anchor_12 = ngAnchor.clone(false);
+    final _anchor_12 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_12);
     _appEl_12 = new ViewContainer(12, null, this, _anchor_12);
     TemplateRef _TemplateRef_12_8 = new TemplateRef(_appEl_12, viewFactory_AppComponent2);
@@ -255,7 +255,7 @@ class _ViewAppComponent1 extends AppView<import1.AppComponent> {
   import24.ViewHeroesComponent0 _compView_0;
   import25.HeroesComponent _HeroesComponent_0_5;
   import9.HeroService __HeroService_0_6;
-  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   import9.HeroService get _HeroService_0_6 {
@@ -304,7 +304,7 @@ class _ViewAppComponent2 extends AppView<import1.AppComponent> {
   import24.ViewHeroesComponent0 _compView_0;
   import25.HeroesComponent _HeroesComponent_0_5;
   import9.HeroService __HeroService_0_6;
-  _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   import9.HeroService get _HeroService_0_6 {
@@ -356,7 +356,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   import22.UserService _UserService_0_6;
   import1.AppComponent _AppComponent_0_7;
   import8.Logger __Logger_0_8;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   import8.Logger get _Logger_0_8 {
     if ((this.__Logger_0_8 == null)) {
       (__Logger_0_8 = new import8.Logger());

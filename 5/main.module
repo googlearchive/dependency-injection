@@ -1,1 +1,1 @@
-{"p":["dependency_injection","web/main.dart"],"s":[["dependency_injection","web/main.template.dart"],["dependency_injection","web/main.dart"]],"d":[["angular","lib/angular.dart"],["dependency_injection","lib/app_component.dart"],["dependency_injection","lib/app_component.template.dart"],["angular","lib/angular.template.dart"]]}
+{"p":["dependency_injection","web/main.dart"],"s":[["dependency_injection","web/main.dart"]],"d":[["dependency_injection","lib/app_component.template.dart"],["angular","lib/angular.dart"]]}

@@ -28,9 +28,9 @@ import 'package:angular/src/core/linker/app_view_utils.dart' as import6;
 import 'package:angular/angular.dart';
 import 'car/car.dart' as import8;
 import 'logger_service.dart' as import9;
-import 'heroes/hero_service.dart' as import10;
-import 'heroes/hero_service_provider.dart' as import11;
-import 'user_service.dart' as import12;
+import 'heroes/hero_service_provider.dart' as import10;
+import 'user_service.dart' as import11;
+import 'heroes/hero_service.dart' as import12;
 
 const List<dynamic> styles$InjectorComponent = const [];
 
@@ -109,7 +109,7 @@ class _ViewInjectorComponentHost0 extends AppView<dynamic> {
   import8.Tires __Tires_0_7;
   import8.Car __Car_0_8;
   import9.Logger __Logger_0_9;
-  import10.HeroService __HeroService_0_10;
+  dynamic __HeroService_0_10;
   _ViewInjectorComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   import8.Engine get _Engine_0_6 {
     if ((this.__Engine_0_6 == null)) {
@@ -139,9 +139,9 @@ class _ViewInjectorComponentHost0 extends AppView<dynamic> {
     return this.__Logger_0_9;
   }
 
-  import10.HeroService get _HeroService_0_10 {
+  dynamic get _HeroService_0_10 {
     if ((this.__HeroService_0_10 == null)) {
-      (__HeroService_0_10 = import11.heroServiceFactory(this._Logger_0_9, this.injectorGet(import12.UserService, this.viewData.parentIndex)));
+      (__HeroService_0_10 = import10.heroServiceFactory(this._Logger_0_9, this.injectorGet(import11.UserService, this.viewData.parentIndex)));
     }
     return this.__HeroService_0_10;
   }
@@ -170,7 +170,7 @@ class _ViewInjectorComponentHost0 extends AppView<dynamic> {
     if ((identical(token, import9.Logger) && (0 == nodeIndex))) {
       return _Logger_0_9;
     }
-    if ((identical(token, import10.HeroService) && (0 == nodeIndex))) {
+    if ((identical(token, import12.HeroService) && (0 == nodeIndex))) {
       return _HeroService_0_10;
     }
     return notFoundResult;

@@ -9,15 +9,13 @@ import 'package:angular/angular.dart';
 import 'car.dart';
 import 'car_creations.dart' as carCreations;
 import 'car_factory.dart';
-import 'car_injector.dart';
 import 'car_no_di.dart' as carNoDi;
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'car.template.dart' as _ref0;
 import 'car_creations.template.dart' as _ref1;
 import 'car_factory.template.dart' as _ref2;
-import 'car_injector.template.dart' as _ref3;
-import 'car_no_di.template.dart' as _ref4;
-import 'package:angular/angular.template.dart' as _ref5;
+import 'car_no_di.template.dart' as _ref3;
+import 'package:angular/angular.template.dart' as _ref4;
 import 'package:angular/src/core/linker/app_view.dart';
 import 'car_component.dart' as import1;
 import 'dart:html' as import2;
@@ -44,15 +42,12 @@ class ViewCarComponent0 extends AppView<import1.CarComponent> {
   import2.Text _text_11;
   import2.DivElement _el_12;
   import2.Text _text_13;
-  import2.DivElement _el_14;
-  import2.Text _text_15;
   var _expr_0;
   var _expr_1;
   var _expr_2;
   var _expr_3;
   var _expr_4;
   var _expr_5;
-  var _expr_6;
   static RenderComponentType _renderType;
   ViewCarComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-car');
@@ -76,25 +71,21 @@ class ViewCarComponent0 extends AppView<import1.CarComponent> {
     _text_5 = new import2.Text('');
     _el_4.append(_text_5);
     _el_6 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_6, 'id', 'injector');
+    createAttr(_el_6, 'id', 'factory');
     _text_7 = new import2.Text('');
     _el_6.append(_text_7);
     _el_8 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_8, 'id', 'factory');
+    createAttr(_el_8, 'id', 'simple');
     _text_9 = new import2.Text('');
     _el_8.append(_text_9);
     _el_10 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_10, 'id', 'simple');
+    createAttr(_el_10, 'id', 'super');
     _text_11 = new import2.Text('');
     _el_10.append(_text_11);
     _el_12 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_12, 'id', 'super');
+    createAttr(_el_12, 'id', 'test');
     _text_13 = new import2.Text('');
     _el_12.append(_text_13);
-    _el_14 = createDivAndAppend(doc, parentRenderNode);
-    createAttr(_el_14, 'id', 'test');
-    _text_15 = new import2.Text('');
-    _el_14.append(_text_15);
     init(const [], null);
     return null;
   }
@@ -112,30 +103,25 @@ class ViewCarComponent0 extends AppView<import1.CarComponent> {
       _text_5.text = currVal_1;
       _expr_1 = currVal_1;
     }
-    final currVal_2 = import6.interpolate0(_ctx.injectorCar.drive());
+    final currVal_2 = import6.interpolate0(_ctx.factoryCar.drive());
     if (!identical(_expr_2, currVal_2)) {
       _text_7.text = currVal_2;
       _expr_2 = currVal_2;
     }
-    final currVal_3 = import6.interpolate0(_ctx.factoryCar.drive());
+    final currVal_3 = import6.interpolate0(_ctx.simpleCar.drive());
     if (!identical(_expr_3, currVal_3)) {
       _text_9.text = currVal_3;
       _expr_3 = currVal_3;
     }
-    final currVal_4 = import6.interpolate0(_ctx.simpleCar.drive());
+    final currVal_4 = import6.interpolate0(_ctx.superCar.drive());
     if (!identical(_expr_4, currVal_4)) {
       _text_11.text = currVal_4;
       _expr_4 = currVal_4;
     }
-    final currVal_5 = import6.interpolate0(_ctx.superCar.drive());
+    final currVal_5 = import6.interpolate0(_ctx.testCar.drive());
     if (!identical(_expr_5, currVal_5)) {
       _text_13.text = currVal_5;
       _expr_5 = currVal_5;
-    }
-    final currVal_6 = import6.interpolate0(_ctx.testCar.drive());
-    if (!identical(_expr_6, currVal_6)) {
-      _text_15.text = currVal_6;
-      _expr_6 = currVal_6;
     }
   }
 }
@@ -210,5 +196,4 @@ void initReflector() {
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
-  _ref5.initReflector();
 }

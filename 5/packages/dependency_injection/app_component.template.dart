@@ -33,25 +33,24 @@ import 'src/car/car_component.dart' as import5;
 import 'src/injector_component.template.dart' as import6;
 import 'src/injector_component.dart' as import7;
 import 'src/logger_service.dart' as import8;
-import 'src/heroes/hero_service.dart' as import9;
-import 'src/test_component.template.dart' as import10;
-import 'src/test_component.dart' as import11;
+import 'src/test_component.template.dart' as import9;
+import 'src/test_component.dart' as import10;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_if.dart';
-import 'src/providers_component.template.dart' as import14;
-import 'src/providers_component.dart' as import15;
+import 'src/providers_component.template.dart' as import13;
+import 'src/providers_component.dart' as import14;
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import17;
+import 'package:angular/src/core/linker/view_type.dart' as import16;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'package:angular/src/core/linker/app_view_utils.dart' as import19;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import18;
 import 'package:angular/angular.dart';
-import 'src/heroes/hero_service_provider.dart' as import21;
-import 'src/user_service.dart' as import22;
+import 'src/heroes/hero_service_provider.dart' as import20;
+import 'src/user_service.dart' as import21;
 import 'package:angular/src/core/linker/template_ref.dart';
+import 'src/heroes/hero_service.dart' as import23;
 import 'src/heroes/heroes_component.template.dart' as import24;
 import 'src/heroes/heroes_component.dart' as import25;
 import 'src/app_config.dart' as import26;
-import 'package:angular/src/core/di/opaque_token.dart' as import27;
 
 const List<dynamic> styles$AppComponent = const [];
 
@@ -71,10 +70,10 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import4.Tires __Tires_3_7;
   import4.Car __Car_3_8;
   import8.Logger __Logger_3_9;
-  import9.HeroService __HeroService_3_10;
+  dynamic __HeroService_3_10;
   import2.Element _el_4;
-  import10.ViewTestComponent0 _compView_4;
-  import11.TestComponent _TestComponent_4_5;
+  import9.ViewTestComponent0 _compView_4;
+  import10.TestComponent _TestComponent_4_5;
   import2.Element _el_5;
   import2.Element _el_7;
   import2.Text _text_8;
@@ -84,13 +83,13 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   ViewContainer _appEl_12;
   NgIf _NgIf_12_9;
   import2.Element _el_13;
-  import14.ViewProvidersComponent0 _compView_13;
-  import15.ProvidersComponent _ProvidersComponent_13_5;
+  import13.ViewProvidersComponent0 _compView_13;
+  import14.ProvidersComponent _ProvidersComponent_13_5;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import16.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-app');
-    _renderType ??= import19.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$AppComponent);
+    _renderType ??= import18.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$AppComponent);
     setupComponentType(_renderType);
   }
   import4.Engine get _Engine_3_6 {
@@ -121,9 +120,9 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     return this.__Logger_3_9;
   }
 
-  import9.HeroService get _HeroService_3_10 {
+  dynamic get _HeroService_3_10 {
     if ((this.__HeroService_3_10 == null)) {
-      (__HeroService_3_10 = import21.heroServiceFactory(this._Logger_3_9, this.parentView.injectorGet(import22.UserService, this.viewData.parentIndex)));
+      (__HeroService_3_10 = import20.heroServiceFactory(this._Logger_3_9, this.parentView.injectorGet(import21.UserService, this.viewData.parentIndex)));
     }
     return this.__HeroService_3_10;
   }
@@ -149,10 +148,10 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     parentRenderNode.append(_el_3);
     _InjectorComponent_3_5 = new import7.InjectorComponent(injector(3));
     _compView_3.create(_InjectorComponent_3_5, []);
-    _compView_4 = new import10.ViewTestComponent0(this, 4);
+    _compView_4 = new import9.ViewTestComponent0(this, 4);
     _el_4 = _compView_4.rootEl;
     parentRenderNode.append(_el_4);
-    _TestComponent_4_5 = new import11.TestComponent();
+    _TestComponent_4_5 = new import10.TestComponent();
     _compView_4.create(_TestComponent_4_5, []);
     _el_5 = createAndAppend(doc, 'h2', parentRenderNode);
     import2.Text _text_6 = new import2.Text('User');
@@ -174,10 +173,10 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _appEl_12 = new ViewContainer(12, null, this, _anchor_12);
     TemplateRef _TemplateRef_12_8 = new TemplateRef(_appEl_12, viewFactory_AppComponent2);
     _NgIf_12_9 = new NgIf(_appEl_12, _TemplateRef_12_8);
-    _compView_13 = new import14.ViewProvidersComponent0(this, 13);
+    _compView_13 = new import13.ViewProvidersComponent0(this, 13);
     _el_13 = _compView_13.rootEl;
     parentRenderNode.append(_el_13);
-    _ProvidersComponent_13_5 = new import15.ProvidersComponent();
+    _ProvidersComponent_13_5 = new import14.ProvidersComponent();
     _compView_13.create(_ProvidersComponent_13_5, []);
     _el_9.addEventListener('click', eventHandler0(ctx.nextUser));
     init(const [], null);
@@ -207,7 +206,7 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     if ((identical(token, import8.Logger) && (3 == nodeIndex))) {
       return _Logger_3_9;
     }
-    if ((identical(token, import9.HeroService) && (3 == nodeIndex))) {
+    if ((identical(token, import23.HeroService) && (3 == nodeIndex))) {
       return _HeroService_3_10;
     }
     return notFoundResult;
@@ -254,13 +253,13 @@ class _ViewAppComponent1 extends AppView<import1.AppComponent> {
   import2.Element _el_0;
   import24.ViewHeroesComponent0 _compView_0;
   import25.HeroesComponent _HeroesComponent_0_5;
-  import9.HeroService __HeroService_0_6;
-  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  dynamic __HeroService_0_6;
+  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import16.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
-  import9.HeroService get _HeroService_0_6 {
+  dynamic get _HeroService_0_6 {
     if ((this.__HeroService_0_6 == null)) {
-      (__HeroService_0_6 = import21.heroServiceFactory(this.parentView.injectorGet(import8.Logger, this.viewData.parentIndex), this.parentView.injectorGet(import22.UserService, this.viewData.parentIndex)));
+      (__HeroService_0_6 = import20.heroServiceFactory(this.parentView.injectorGet(import8.Logger, this.viewData.parentIndex), this.parentView.injectorGet(import21.UserService, this.viewData.parentIndex)));
     }
     return this.__HeroService_0_6;
   }
@@ -278,7 +277,7 @@ class _ViewAppComponent1 extends AppView<import1.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import9.HeroService) && (0 == nodeIndex))) {
+    if ((identical(token, import23.HeroService) && (0 == nodeIndex))) {
       return _HeroService_0_6;
     }
     return notFoundResult;
@@ -303,13 +302,13 @@ class _ViewAppComponent2 extends AppView<import1.AppComponent> {
   import2.Element _el_0;
   import24.ViewHeroesComponent0 _compView_0;
   import25.HeroesComponent _HeroesComponent_0_5;
-  import9.HeroService __HeroService_0_6;
-  _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  dynamic __HeroService_0_6;
+  _ViewAppComponent2(AppView<dynamic> parentView, int parentIndex) : super(import16.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
-  import9.HeroService get _HeroService_0_6 {
+  dynamic get _HeroService_0_6 {
     if ((this.__HeroService_0_6 == null)) {
-      (__HeroService_0_6 = import21.heroServiceFactory(this.parentView.injectorGet(import8.Logger, this.viewData.parentIndex), this.parentView.injectorGet(import22.UserService, this.viewData.parentIndex)));
+      (__HeroService_0_6 = import20.heroServiceFactory(this.parentView.injectorGet(import8.Logger, this.viewData.parentIndex), this.parentView.injectorGet(import21.UserService, this.viewData.parentIndex)));
     }
     return this.__HeroService_0_6;
   }
@@ -327,7 +326,7 @@ class _ViewAppComponent2 extends AppView<import1.AppComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import9.HeroService) && (0 == nodeIndex))) {
+    if ((identical(token, import23.HeroService) && (0 == nodeIndex))) {
       return _HeroService_0_6;
     }
     return notFoundResult;
@@ -352,11 +351,11 @@ const List<dynamic> styles$AppComponentHost = const [];
 
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
-  dynamic _app_config_0_5;
-  import22.UserService _UserService_0_6;
+  dynamic _AppConfig_0_5;
+  import21.UserService _UserService_0_6;
   import1.AppComponent _AppComponent_0_7;
   import8.Logger __Logger_0_8;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import17.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import16.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   import8.Logger get _Logger_0_8 {
     if ((this.__Logger_0_8 == null)) {
       (__Logger_0_8 = new import8.Logger());
@@ -368,9 +367,9 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _app_config_0_5 = import26.heroDiConfigFactory();
-    _UserService_0_6 = new import22.UserService();
-    _AppComponent_0_7 = new import1.AppComponent(_app_config_0_5, _UserService_0_6);
+    _AppConfig_0_5 = import26.appConfigFactory();
+    _UserService_0_6 = new import21.UserService();
+    _AppComponent_0_7 = new import1.AppComponent(_AppConfig_0_5, _UserService_0_6);
     _compView_0.create(_AppComponent_0_7, projectableNodes);
     init0(rootEl);
     return new ComponentRef<import1.AppComponent>(0, this, rootEl, _AppComponent_0_7);
@@ -378,10 +377,10 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, const import27.OpaqueToken('app.config')) && (0 == nodeIndex))) {
-      return _app_config_0_5;
+    if ((identical(token, import26.AppConfig) && (0 == nodeIndex))) {
+      return _AppConfig_0_5;
     }
-    if ((identical(token, import22.UserService) && (0 == nodeIndex))) {
+    if ((identical(token, import21.UserService) && (0 == nodeIndex))) {
       return _UserService_0_6;
     }
     if ((identical(token, import8.Logger) && (0 == nodeIndex))) {

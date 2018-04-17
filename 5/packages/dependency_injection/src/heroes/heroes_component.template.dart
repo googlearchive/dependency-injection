@@ -77,9 +77,9 @@ const List<dynamic> styles$HeroesComponentHost = const [];
 class _ViewHeroesComponentHost0 extends AppView<dynamic> {
   ViewHeroesComponent0 _compView_0;
   import1.HeroesComponent _HeroesComponent_0_5;
-  import10.HeroService __HeroService_0_6;
+  dynamic __HeroService_0_6;
   _ViewHeroesComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
-  import10.HeroService get _HeroService_0_6 {
+  dynamic get _HeroService_0_6 {
     if ((this.__HeroService_0_6 == null)) {
       (__HeroService_0_6 = import11.heroServiceFactory(this.injectorGet(import12.Logger, this.viewData.parentIndex), this.injectorGet(import13.UserService, this.viewData.parentIndex)));
     }
